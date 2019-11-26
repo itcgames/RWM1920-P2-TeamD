@@ -60,16 +60,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+
+    <Compile Include="Assets\Scripts\LeverBehaviour.cs" />
+
     <Compile Include="Assets\Scripts\BulletMove.cs" />
     <Compile Include="Assets\Scripts\CasingEject.cs" />
     <Compile Include="Assets\Scripts\FireBullet.cs" />
     <Compile Include="Assets\Scripts\HammerSwing.cs" />
     <Compile Include="Assets\Scripts\MartinPipeScript.cs" />
+
     <Compile Include="Assets\Scripts\placeholderScript.cs" />
     <Compile Include="Assets\Scripts\StockSlide.cs" />
     <Compile Include="Assets\Scripts\TriggerFire.cs" />
     <Compile Include="Assets\Scripts\UpwardVelocityMartin.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
+
+      <HintPath>C:/Users/gameuser/Documents/College Stuff/RWM/P2 Project/RWM1920-P2-TeamD/RWM1920-P2-TeamD/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>C:/Users/gameuser/Documents/College Stuff/RWM/P2 Project/RWM1920-P2-TeamD/RWM1920-P2-TeamD/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>C:/Users/gameuser/Documents/College Stuff/RWM/P2 Project/RWM1920-P2-TeamD/RWM1920-P2-TeamD/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/gameuser/Documents/College Stuff/RWM/P2 Project/RWM1920-P2-TeamD/RWM1920-P2-TeamD/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>C:/Users/gameuser/Documents/College Stuff/RWM/P2 Project/RWM1920-P2-TeamD/RWM1920-P2-TeamD/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+
       <HintPath>C:/Users/Quintin Furlong/Documents/GitHub/RWM1920-P2-TeamD/RWM1920-P2-TeamD/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
@@ -83,6 +102,7 @@
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>C:/Users/Quintin Furlong/Documents/GitHub/RWM1920-P2-TeamD/RWM1920-P2-TeamD/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -286,6 +306,15 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
+
+      <HintPath>C:/Users/gameuser/Documents/College Stuff/RWM/P2 Project/RWM1920-P2-TeamD/RWM1920-P2-TeamD/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.StandardEvents">
+      <HintPath>C:/Users/gameuser/Documents/College Stuff/RWM/P2 Project/RWM1920-P2-TeamD/RWM1920-P2-TeamD/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.Tracker">
+      <HintPath>C:/Users/gameuser/Documents/College Stuff/RWM/P2 Project/RWM1920-P2-TeamD/RWM1920-P2-TeamD/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+
       <HintPath>C:/Users/Quintin Furlong/Documents/GitHub/RWM1920-P2-TeamD/RWM1920-P2-TeamD/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
@@ -293,6 +322,7 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>C:/Users/Quintin Furlong/Documents/GitHub/RWM1920-P2-TeamD/RWM1920-P2-TeamD/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
