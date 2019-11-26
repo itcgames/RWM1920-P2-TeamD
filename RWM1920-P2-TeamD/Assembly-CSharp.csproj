@@ -61,9 +61,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\ActivateParachute.cs" />
+    <Compile Include="Assets\Scripts\BulletMove.cs" />
+    <Compile Include="Assets\Scripts\CasingEject.cs" />
     <Compile Include="Assets\Scripts\ColliderParachute.cs" />
+    <Compile Include="Assets\Scripts\FireBullet.cs" />
     <Compile Include="Assets\Scripts\GravityObjectScript.cs" />
+    <Compile Include="Assets\Scripts\HammerSwing.cs" />
+    <Compile Include="Assets\Scripts\LeverBehaviour.cs" />
+    <Compile Include="Assets\Scripts\MartinPipeScript.cs" />
     <Compile Include="Assets\Scripts\placeholderScript.cs" />
+    <Compile Include="Assets\Scripts\StockSlide.cs" />
+    <Compile Include="Assets\Scripts\TriggerFire.cs" />
+    <Compile Include="Assets\Scripts\UpwardVelocityMartin.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/dylcu/Desktop/RWM1920-P2-TeamD/RWM1920-P2-TeamD/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
