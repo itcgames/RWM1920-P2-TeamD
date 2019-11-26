@@ -65,13 +65,10 @@
     <Compile Include="Assets\Scripts\CasingEject.cs" />
     <Compile Include="Assets\Scripts\ColliderParachute.cs" />
     <Compile Include="Assets\Scripts\FireBullet.cs" />
-    <Compile Include="Assets\Scripts\GravInvert.cs" />
     <Compile Include="Assets\Scripts\GravityObjectScript.cs" />
     <Compile Include="Assets\Scripts\HammerSwing.cs" />
-    <Compile Include="Assets\Scripts\InvertToggle.cs" />
     <Compile Include="Assets\Scripts\LeverBehaviour.cs" />
     <Compile Include="Assets\Scripts\MartinPipeScript.cs" />
-    <Compile Include="Assets\Scripts\Movement.cs" />
     <Compile Include="Assets\Scripts\placeholderScript.cs" />
     <Compile Include="Assets\Scripts\StockSlide.cs" />
     <Compile Include="Assets\Scripts\TriggerFire.cs" />
