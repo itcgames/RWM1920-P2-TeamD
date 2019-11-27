@@ -10,8 +10,11 @@ public class GravityObjectScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		objectFalling.GetComponent<Rigidbody2D>().gravityScale = 0.1f;
-		gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.1f;
+		if (this.gameObject.activeSelf == true)
+		{
+			objectFalling.GetComponent<Rigidbody2D>().gravityScale = 0.1f;
+			gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.1f;
+		}
 		
 	}
 }

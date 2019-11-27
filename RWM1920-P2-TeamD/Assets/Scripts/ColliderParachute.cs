@@ -10,6 +10,15 @@ public class ColliderParachute : MonoBehaviour
 	{
 		print("trigger");
 		parachute.SetActive(false);
-		gameObject.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
+		
+	}
+
+	private void CheckActive()
+	{
+		if(parachute.activeSelf == false)
+		{
+			gameObject.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
+			parachute.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
+		}
 	}
 }
