@@ -25,7 +25,7 @@ public class FireBullet : MonoBehaviour
             gameTimer += Time.deltaTime;
             if (gameTimer > 0.3f && noSpam)
             {
-                Vector3 vector = new Vector3(2.4f, 1.9f, 0.0f);
+                Vector3 vector = new Vector3(2.4f * setScale.GUN_SCALE, 1.9f * setScale.GUN_SCALE, 0.0f);
                 Quaternion newRotation = transform.rotation;
                 vector = Quaternion.Euler(0, 0, newRotation.eulerAngles.z) * vector;
 
