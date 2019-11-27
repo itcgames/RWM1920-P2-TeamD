@@ -30,4 +30,16 @@ public class Rotate : MonoBehaviour
        
     }
 
+    public void ToggleRight()
+    {
+        if (Right)
+        {
+            Right = false;
+        }
+        else
+        {
+            Right = true;
+        }
+    }
+
 }
