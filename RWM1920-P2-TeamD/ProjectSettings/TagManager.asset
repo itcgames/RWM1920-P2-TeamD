@@ -9,6 +9,8 @@ TagManager:
   - Options
   - MainMenu
   - HelpMenu
+  - PipeLever
+  - ConveyorLever
   layers:
   - Default
   - TransparentFX

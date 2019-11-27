@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class LeverBehaviour : MonoBehaviour
 {
-    //public playerBehaviour player;   //declare Script here
-
+    public MartinPipeScript pipeScript;
+    public ConveyorBelt conveyorBelt;
+    public Rotate cog1Rotate;
+    public Rotate cog2Rotate;
     // Update is called once per frame
     void Update()
     {
@@ -15,8 +17,16 @@ public class LeverBehaviour : MonoBehaviour
 
             if (hit.transform != null)
             {
-                //player.printName();   // Call Script function here
-                printName(hit.transform.gameObject);
+                if (this.tag == "PipeLever")
+                {
+                    pipeScript.toggleActive();
+                }
+                else if (this.tag == "ConveyorLever")
+                {
+                    cog1Rotate.ToggleRight();
+                    cog2Rotate.ToggleRight();
+                    conveyorBelt.toggleEndpoint();
+                }
             }
         }
     }
