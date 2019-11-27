@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: bd6bbbbea5bf62545acaf84d451127d4
+  - enabled: 1
+    path: Assets/Scenes/Keith's Scene.unity
+    guid: fb2854bf9bb6be04e943a2cf18a34d5d
+  - enabled: 1
+    path: Assets/Scenes/Options.unity
+    guid: 6116b33b17e3d734ea043062a577588c
   m_configObjects: {}
