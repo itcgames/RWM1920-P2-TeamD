@@ -12,11 +12,7 @@ public class HammerSwing : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !start)
-        {
-            start = true;
-            gameTimer = 0.0f;
-        }
+		
         if (start)
         {
             gameTimer += Time.deltaTime;
@@ -36,4 +32,14 @@ public class HammerSwing : MonoBehaviour
             }
         }
     }
+
+	void OnMouseOver()
+	{
+		print("over gun");
+		if (Input.GetMouseButtonDown(0) && !start)
+		{
+			start = true;
+			gameTimer = 0.0f;
+		}
+	}
 }
