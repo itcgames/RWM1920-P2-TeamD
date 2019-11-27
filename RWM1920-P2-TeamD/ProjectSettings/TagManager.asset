@@ -7,6 +7,8 @@ TagManager:
   - NewGame
   - Quit
   - Options
+  - MainMenu
+  - HelpMenu
   layers:
   - Default
   - TransparentFX
