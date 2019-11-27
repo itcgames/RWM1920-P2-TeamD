@@ -4,35 +4,35 @@ using UnityEngine;
 
 public class InvertToggle : MonoBehaviour {
 
-    Vector2 centrePoint;
-    public GameObject Go;
-    GravityInvert grav;
+    //Vector2 centrePoint;
+    //public GameObject Go;
+    //GravityInvert grav;
     
 
-    void Start()
-    {
-        centrePoint = GetComponent<Renderer>().bounds.center;
+    //void Start()
+    //{
+    //    centrePoint = GetComponent<Renderer>().bounds.center;
        
-        grav = Go.GetComponent<GravityInvert>();
+    //    grav = Go.GetComponent<GravityInvert>();
         
 
 
 
-    }
+    //}
     
-    void OnTriggerStay(Collider other)
-    {
-        if(other.gameObject.tag==("Finish"))
-        {
-            //Debug.Log("col detected");
-            if (other.gameObject.transform.position.x <centrePoint.x)
-            {
-                GravityInvert.invertVal = (other.gameObject.transform.position.x - centrePoint.x) ;
-            }
-            else if (other.gameObject.transform.position.x > centrePoint.x)
-            {
-                GravityInvert.invertVal = ((other.gameObject.transform.position.x - centrePoint.x)) ;
-            }
-        }
-    }
+    //void OnTriggerStay(Collider other)
+    //{
+    //    if(other.gameObject.tag==("Finish"))
+    //    {
+    //        //Debug.Log("col detected");
+    //        if (other.gameObject.transform.position.x <centrePoint.x)
+    //        {
+    //            GravityInvert.invertVal = (other.gameObject.transform.position.x - centrePoint.x) ;
+    //        }
+    //        else if (other.gameObject.transform.position.x > centrePoint.x)
+    //        {
+    //            GravityInvert.invertVal = ((other.gameObject.transform.position.x - centrePoint.x)) ;
+    //        }
+    //    }
+    //}
 }
