@@ -35,7 +35,7 @@ public class StockSlide : MonoBehaviour
             }
             else if (gameTimer >= 0.4f && gameTimer < 0.5f && noSpam)
             {
-                Vector3 vector = new Vector3(0.6f, -2.0f, 0.0f);
+                Vector3 vector = new Vector3(0.6f * setScale.GUN_SCALE, -2.0f * setScale.GUN_SCALE, 0.0f);
                 Quaternion newRotation = transform.rotation;
                 vector = Quaternion.Euler(0, 0, newRotation.eulerAngles.z) * vector;
 

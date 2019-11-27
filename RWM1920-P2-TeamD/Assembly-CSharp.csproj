@@ -62,11 +62,22 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\BulletMove.cs" />
     <Compile Include="Assets\Scripts\CasingEject.cs" />
+<<<<<<< Updated upstream
+=======
+    <Compile Include="Assets\Scripts\ColliderParachute.cs" />
+    <Compile Include="Assets\Scripts\ConveyorBelt.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Assets\Scripts\FireBullet.cs" />
     <Compile Include="Assets\Scripts\HammerSwing.cs" />
     <Compile Include="Assets\Scripts\placeholderScript.cs" />
+    <Compile Include="Assets\Scripts\Rotate.cs" />
     <Compile Include="Assets\Scripts\StockSlide.cs" />
     <Compile Include="Assets\Scripts\TriggerFire.cs" />
+<<<<<<< Updated upstream
+=======
+    <Compile Include="Assets\Scripts\UpwardVelocityMartin.cs" />
+    <Compile Include="Assets\setScale.cs" />
+>>>>>>> Stashed changes
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Quintin Furlong/Documents/GitHub/RWM1920-P2-TeamD/RWM1920-P2-TeamD/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
