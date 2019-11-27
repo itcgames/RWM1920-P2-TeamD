@@ -13,9 +13,15 @@ public class BulletMove : MonoBehaviour
     void Update()
     {
         Vector3 newPosition = transform.position;        
+        
+        newPosition.x += Mathf.Cos(((transform.rotation.eulerAngles.z + 90) * Mathf.PI) / 180) * setScale.GUN_SCALE;
+        newPosition.y += Mathf.Sin(((transform.rotation.eulerAngles.z + 90) * Mathf.PI) / 180) * setScale.GUN_SCALE;
+        transform.position = newPosition;
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.name == "Parachute")
         {
 
 			other.gameObject.SetActive(false);
