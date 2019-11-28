@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class MartinPipeScript : MonoBehaviour
 {
-    bool active = true;
+    bool active = false;
 
     private void Update()
     {
-        print(active);
+       
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
