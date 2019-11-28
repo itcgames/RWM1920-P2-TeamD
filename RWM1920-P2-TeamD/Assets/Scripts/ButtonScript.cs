@@ -23,7 +23,7 @@ public class ButtonScript : MonoBehaviour
             {
                 if(hit.transform.gameObject.tag == "NewGame")
                 {
-                    SceneManager.LoadScene(1);
+                    SceneManager.LoadScene(4);
                 }
                 if (hit.transform.gameObject.tag == "Options")
                 {

@@ -16,12 +16,12 @@ public class ReturnToMenu : MonoBehaviour
                 Debug.Log("derp");
                 if (hit.transform.gameObject.tag == "MainMenu")
                 {
-                    SceneManager.LoadScene(2);
+                    SceneManager.LoadScene(3);
                     
                 }
                 if (hit.transform.gameObject.tag == "HelpMenu")
                 {
-                    SceneManager.LoadScene(3);
+                    SceneManager.LoadScene(1);
 
                 }
             }
