@@ -22,9 +22,17 @@ public class ButtonScript : MonoBehaviour
                 {
                     SceneManager.LoadScene(4);
                 }
+                if (hit.transform.gameObject.tag == "HelpMenu")
+                {
+                    SceneManager.LoadScene(1);
+                }
                 if (hit.transform.gameObject.tag == "Quit")
                 {
                     Application.Quit();
+                }
+                if (hit.transform.gameObject.tag == "BackToMenu")
+                {
+                    SceneManager.LoadScene(3);
                 }
             }
         }
@@ -33,5 +41,14 @@ public class ButtonScript : MonoBehaviour
     public void GoToMainMenu()
     {
         SceneManager.LoadScene(3);
+    }
+
+    public void goToLevel1()
+    {
+        SceneManager.LoadScene(2);
+    }
+    public void goToLevel2()
+    {
+        SceneManager.LoadScene(5);
     }
 }
