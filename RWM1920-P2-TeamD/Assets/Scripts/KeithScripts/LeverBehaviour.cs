@@ -12,10 +12,29 @@ public class LeverBehaviour : MonoBehaviour
 	public AudioSource leverSource;
 	public AudioClip leverClip;
 
+    bool leverLeft = true;
+
+    public Sprite Left;
+    public Sprite Right;
+
 	private void Start()
 	{
 		leverSource.clip = leverClip;
 	}
+
+    private void Update()
+    {
+        if(leverLeft)
+        {
+            this.GetComponent<SpriteRenderer>().sprite = Left;
+        }
+        else
+        {
+            this.GetComponent<SpriteRenderer>().sprite = Right;
+        }
+
+        print(leverLeft);
+    }
 
     private void OnMouseOver()
     {
@@ -24,6 +43,7 @@ public class LeverBehaviour : MonoBehaviour
             leverSource.Play();
             Debug.Log("pipe lever works");
             pipeScript.toggleActive();
+            toggleLeverLeft();
         }
 
         if (Input.GetMouseButtonDown(0) && this.tag == "ConveyorLever")
@@ -32,6 +52,26 @@ public class LeverBehaviour : MonoBehaviour
             cog1Rotate.ToggleRight();
             cog2Rotate.ToggleRight();
             conveyorBelt.toggleEndpoint();
+            toggleLeverLeft();
+        }
+
+        if (Input.GetMouseButtonDown(0) && this.tag == "GravityLever")
+        {
+            leverSource.Play();
+            //Toggle Grav Box
+            toggleLeverLeft();
+        }
+    }
+
+    void toggleLeverLeft()
+    {
+        if(leverLeft)
+        {
+            leverLeft = false;
+        }
+        else
+        {
+            leverLeft = true;
         }
     }
 }

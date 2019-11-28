@@ -9,17 +9,14 @@ public class RotateObj : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        
+    {  
         if (Input.GetKey("d"))
         {
             transform.Rotate(Vector3.forward * speedLeft * Time.deltaTime);
-            
         } 
         if (Input.GetKey("a"))
         {
             transform.Rotate(Vector3.forward * speedRight * Time.deltaTime);
-
         }
     }
 }
