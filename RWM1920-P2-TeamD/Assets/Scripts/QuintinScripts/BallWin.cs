@@ -24,10 +24,10 @@ public class BallWin : MonoBehaviour
             else if (scene.name == "Level 2")
             {
 
-                SceneManager.LoadScene(6);//credits
+                SceneManager.LoadScene(5);//credits
 
 				gameWinSource.Play();
-				SceneManager.LoadScene(3);//should be level 3 0r credits
+				SceneManager.LoadScene(2);//should be level 3 0r credits
 
             }
         }
