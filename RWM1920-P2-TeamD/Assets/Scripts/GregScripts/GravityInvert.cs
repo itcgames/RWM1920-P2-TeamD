@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class GravityInvert : MonoBehaviour {
     private Rigidbody2D Rb;
-    public static double invertVal=2;
-    int rounded;
+
+
+    Vector2 vec;
+    
     void OnTriggerStay2D(Collider2D other)
     {
-        rounded = Mathf.RoundToInt((float)invertVal);
+        Vector2 temp = new Vector2(Mathf.Cos(((transform.rotation.eulerAngles.z + 90) * Mathf.PI) / 180), Mathf.Sin(((transform.rotation.eulerAngles.z + 90) * Mathf.PI) / 180));
         Rb = other.gameObject.GetComponent<Rigidbody2D>();
-        Rb.AddForce(-rounded*(Physics.gravity) * Rb.mass);
-        Debug.Log(invertVal);
+        vec = (temp * Rb.mass)*50;
+        Rb.AddForce(vec);
     }
 }
