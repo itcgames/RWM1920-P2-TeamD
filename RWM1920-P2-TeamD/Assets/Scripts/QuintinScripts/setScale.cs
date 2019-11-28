@@ -6,9 +6,13 @@ public class setScale : MonoBehaviour
 {
     public float scaleInput;
     public static float GUN_SCALE;
+
+	public AudioSource gunSource;
+	public AudioClip gunClip;
     // Start is called before the first frame update
     void Start()
     {
+		gunSource.clip = gunClip;
         GUN_SCALE = scaleInput;
         if(GUN_SCALE == 0)
         {
@@ -21,6 +25,7 @@ public class setScale : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+			gunSource.Play();
             transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y,-1);
         }
     }
