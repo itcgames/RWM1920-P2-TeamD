@@ -12,6 +12,7 @@ TagManager:
   - PipeLever
   - ConveyorLever
   - BackToMenu
+  - ResetBT
   layers:
   - Default
   - TransparentFX
