@@ -17,16 +17,17 @@ public class BulletMove : MonoBehaviour
         newPosition.x += Mathf.Cos(((transform.rotation.eulerAngles.z + 90) * Mathf.PI) / 180) * setScale.GUN_SCALE;
         newPosition.y += Mathf.Sin(((transform.rotation.eulerAngles.z + 90) * Mathf.PI) / 180) * setScale.GUN_SCALE;
         transform.position = newPosition;
+        if (transform.position.y < -10 || transform.position.y > 10 || transform.position.x < -10 || transform.position.x > 10)
+        {
+            Destroy(gameObject);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.name == "Parachute")
         {
-
 			other.gameObject.SetActive(false);
-            Debug.Log("OnTriggerEnter2D");
         }
-		Debug.Log("OnTriggerEnter2D123");
 	}
 }
