@@ -16,7 +16,7 @@ public class ButtonScript : MonoBehaviour
             {
                 if(hit.transform.gameObject.tag == "NewGame")
                 {
-                    SceneManager.LoadScene(4);
+                    SceneManager.LoadScene(5);
                 }
                 if (hit.transform.gameObject.tag == "Options")
                 {
