@@ -8,7 +8,7 @@ public class MartinPipeScript : MonoBehaviour
 
     private void Update()
     {
-        print(active);
+       
     }
 
     public void OnCollisionEnter2D(Collision2D collision)

@@ -5,13 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class ButtonScript : MonoBehaviour
 {
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -32,9 +25,13 @@ public class ButtonScript : MonoBehaviour
                 if (hit.transform.gameObject.tag == "Quit")
                 {
                     Application.Quit();
-                    print("Derp");
                 }
             }
         }
+    }
+
+    public void GoToMainMenu()
+    {
+        SceneManager.LoadScene(3);
     }
 }
