@@ -20,7 +20,7 @@ public class ButtonScript : MonoBehaviour
                 }
                 if (hit.transform.gameObject.tag == "Options")
                 {
-                    SceneManager.LoadScene(2);
+                    SceneManager.LoadScene(4);
                 }
                 if (hit.transform.gameObject.tag == "Quit")
                 {
