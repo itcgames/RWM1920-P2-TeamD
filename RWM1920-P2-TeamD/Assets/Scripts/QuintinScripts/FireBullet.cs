@@ -7,14 +7,15 @@ public class FireBullet : MonoBehaviour
     public GameObject bullet;
     public float gameTimer;
     public bool start, noSpam;
+    public int cont;
     void Start()
     {
         start = false;
         noSpam = false;
+        cont = 0;
     }
     void Update()
     {
-		
         if(start)
         {
             gameTimer += Time.deltaTime;
@@ -38,12 +39,13 @@ public class FireBullet : MonoBehaviour
     }
 	void OnMouseOver()
 	{
-		print("over gun");
 		if (Input.GetMouseButtonDown(0) && !start)
 		{
 			start = true;
 			noSpam = true;
 			gameTimer = 0.0f;
 		}
-	}
+        Debug.Log("Name: " + gameObject.name);
+
+    }
 }

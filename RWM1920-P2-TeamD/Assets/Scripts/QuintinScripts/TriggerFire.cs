@@ -44,11 +44,12 @@ public class TriggerFire : MonoBehaviour
     }
 	void OnMouseOver()
 	{
-		print("over gun");
 		if (Input.GetMouseButtonDown(0) && !start)
 		{
 			start = true;
 			gameTimer = 0.0f;
 		}
-	}
+        Debug.Log("Name: " + gameObject.name);
+
+    }
 }

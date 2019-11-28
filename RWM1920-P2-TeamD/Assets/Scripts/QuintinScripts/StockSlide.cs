@@ -59,14 +59,15 @@ public class StockSlide : MonoBehaviour
     }
 	void OnMouseOver()
 	{
-		print("over gun");
 		if (Input.GetMouseButtonDown(0) && !start)
 		{
 			start = true;
 			noSpam = true;
 			gameTimer = 0.0f;
 		}
-	}
+        Debug.Log("Name: " + gameObject.name);
+
+    }
 
 
 }
