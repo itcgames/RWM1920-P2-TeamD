@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 678727046283705131}
   - component: {fileID: 778598520545798343}
+  - component: {fileID: 1732988464}
   m_Layer: 0
   m_Name: Entire Gun
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 1765892155451685658}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8043702325149076709}
   - {fileID: 8713290660182213799}
@@ -48,6 +49,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scaleInput: 0.25
+--- !u!61 &1732988464
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765892155451685658}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.025743008, y: -0.038615227}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.4357386, y: 4.475296}
+  m_EdgeRadius: 0
 --- !u!1 &3569081136662889161
 GameObject:
   m_ObjectHideFlags: 0
@@ -143,6 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameTimer: 0
   start: 0
+  gun: {fileID: 1765892155451685658}
 --- !u!61 &533888854
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -150,7 +178,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3569081136662889161}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -266,6 +294,7 @@ MonoBehaviour:
   gameTimer: 0
   start: 0
   noSpam: 0
+  gun: {fileID: 1765892155451685658}
 --- !u!61 &1165602038
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -273,7 +302,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3926878941057184476}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -390,6 +419,7 @@ MonoBehaviour:
     type: 3}
   start: 0
   noSpam: 0
+  gun: {fileID: 1765892155451685658}
 --- !u!61 &658974060
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -397,7 +427,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4218850169260684314}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -511,6 +541,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameTimer: 0
   start: 0
+  gun: {fileID: 1765892155451685658}
 --- !u!61 &1144022031
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -518,7 +549,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9221887528732190573}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
