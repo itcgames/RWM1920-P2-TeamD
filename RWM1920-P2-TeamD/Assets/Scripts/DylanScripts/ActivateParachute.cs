@@ -6,11 +6,18 @@ public class ActivateParachute : MonoBehaviour
 {
 	[SerializeField] private GameObject parachute;
 
-    // Update is called once per frame
-    void Update()
+	public AudioSource parachuteSource;
+	public AudioClip parachuteClip;
+	private void Start()
+	{
+		parachuteSource.clip = parachuteClip;
+	}
+	// Update is called once per frame
+	void Update()
     {
         if(Input.GetKeyDown("space"))
 		{
+			parachuteSource.Play();
 			parachute.SetActive(true);
 		}
 

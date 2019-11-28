@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class BallBoundaryDetection : MonoBehaviour
 {
+	public AudioSource gameLossSource;
+	public AudioClip gameLossClip;
     // Start is called before the first frame update
     void Start()
     {
+		gameLossSource.clip = gameLossClip;
     }
 
     // Update is called once per frame
@@ -14,22 +17,26 @@ public class BallBoundaryDetection : MonoBehaviour
     {
         if(transform.position.y < -5.8)
         {
+			gameLossSource.Play();
             transform.position = new Vector3(0, 4, 0);
             this.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
         }
         else if (transform.position.y > 5.8)
         {
-            transform.position = new Vector3(0, 4, 0);
+			gameLossSource.Play();
+			transform.position = new Vector3(0, 4, 0);
             this.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
         }
         else if (transform.position.x > 11)
         {
-            transform.position = new Vector3(0, 4, 0);
+			gameLossSource.Play();
+			transform.position = new Vector3(0, 4, 0);
             this.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
         }
         else if (transform.position.x < -11)
         {
-            transform.position = new Vector3(0, 4, 0);
+			gameLossSource.Play();
+			transform.position = new Vector3(0, 4, 0);
             this.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
         }
 

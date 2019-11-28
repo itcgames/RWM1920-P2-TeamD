@@ -8,8 +8,15 @@ public class LeverBehaviour : MonoBehaviour
     public ConveyorBelt conveyorBelt;
     public Rotate cog1Rotate;
     public Rotate cog2Rotate;
-    // Update is called once per frame
-    void Update()
+
+	public AudioSource leverSource;
+	public AudioClip leverClip;
+	private void Start()
+	{
+		leverSource.clip = leverClip;
+	}
+	// Update is called once per frame
+	void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
@@ -19,12 +26,14 @@ public class LeverBehaviour : MonoBehaviour
             {
                 if (hit.transform.tag == "PipeLever")
                 {
+					leverSource.Play();
                     Debug.Log("pipe lever works");
                     pipeScript.toggleActive();
                 }
                 else if (hit.transform.tag == "ConveyorLever")
                 {
-                    cog1Rotate.ToggleRight();
+					leverSource.Play();
+					cog1Rotate.ToggleRight();
                     cog2Rotate.ToggleRight();
                     conveyorBelt.toggleEndpoint();
                 }
