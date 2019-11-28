@@ -6,13 +6,18 @@ public class TriggerFire : MonoBehaviour
 {
     public float gameTimer;
     public bool start;
+    public GameObject gun;
     void Start()
     {
         start = false;
     }
     void Update()
     {
-		
+		if(gun.transform.localScale.z == -1 && !start)
+        {
+            start = true;
+            gameTimer = 0.0f;
+        }
         if (start)
         {
             gameTimer += Time.deltaTime;
@@ -39,17 +44,8 @@ public class TriggerFire : MonoBehaviour
             else if(gameTimer > 0.6f)
             {
                 start = false;
+                gun.transform.localScale = new Vector3(gun.transform.localScale.x, gun.transform.localScale.y, 1);
             }
         }
-    }
-	void OnMouseOver()
-	{
-		if (Input.GetMouseButtonDown(0) && !start)
-		{
-			start = true;
-			gameTimer = 0.0f;
-		}
-        Debug.Log("Name: " + gameObject.name);
-
     }
 }

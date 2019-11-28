@@ -17,9 +17,11 @@ public class setScale : MonoBehaviour
         transform.localScale = new Vector3(GUN_SCALE, GUN_SCALE,1);
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnMouseOver()
     {
-        
+        if (Input.GetMouseButtonDown(0))
+        {
+            transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y,-1);
+        }
     }
 }
