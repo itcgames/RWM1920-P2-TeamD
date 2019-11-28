@@ -320,6 +320,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   belt: {fileID: 5922254626085319234}
   endpoint: {fileID: 2040204507138855334}
+  endpointLeft: {fileID: 0}
+  endpointRight: {fileID: 0}
   speed: 5
 --- !u!70 &6220555045022413136
 CapsuleCollider2D:
