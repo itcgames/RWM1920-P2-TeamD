@@ -17,11 +17,12 @@ public class LeverBehaviour : MonoBehaviour
 
             if (hit.transform != null)
             {
-                if (this.tag == "PipeLever")
+                if (hit.transform.tag == "PipeLever")
                 {
+                    Debug.Log("pipe lever works");
                     pipeScript.toggleActive();
                 }
-                else if (this.tag == "ConveyorLever")
+                else if (hit.transform.tag == "ConveyorLever")
                 {
                     cog1Rotate.ToggleRight();
                     cog2Rotate.ToggleRight();
