@@ -16,7 +16,7 @@ public class ballWin : MonoBehaviour
             }
             else if (scene.name == "Level 2")
             {
-                SceneManager.LoadScene(3);//should be level 3 0r credits but will be main menu for now
+                SceneManager.LoadScene(3);//should be level 3 0r credits
             }
         }
     }
