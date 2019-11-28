@@ -7,6 +7,7 @@ public class FireBullet : MonoBehaviour
     public GameObject bullet;
     public float gameTimer;
     public bool start, noSpam;
+    public GameObject gun;
     void Start()
     {
         start = false;
@@ -14,8 +15,13 @@ public class FireBullet : MonoBehaviour
     }
     void Update()
     {
-		
-        if(start)
+        if (gun.transform.localScale.z == -1 && !start)
+        {
+            start = true;
+            noSpam = true;
+            gameTimer = 0.0f;
+        }
+        if (start)
         {
             gameTimer += Time.deltaTime;
             if (gameTimer > 0.3f && noSpam)
@@ -36,14 +42,4 @@ public class FireBullet : MonoBehaviour
             }
         }
     }
-	void OnMouseOver()
-	{
-		print("over gun");
-		if (Input.GetMouseButtonDown(0) && !start)
-		{
-			start = true;
-			noSpam = true;
-			gameTimer = 0.0f;
-		}
-	}
 }
