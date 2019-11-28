@@ -25,5 +25,10 @@ public class CasingEject : MonoBehaviour
             vector.x += 0.001f * setScale.GUN_SCALE;
         vector.y -= 0.005f * setScale.GUN_SCALE;
         transform.position = new Vector3(transform.position.x + vector.x, transform.position.y + vector.y, transform.position.z);
+
+        if(transform.position.y < -10)
+        {
+            Destroy(gameObject);
+        }
     }
 }
