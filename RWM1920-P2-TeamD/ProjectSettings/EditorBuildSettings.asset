@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Keith's Scene.unity
-    guid: fb2854bf9bb6be04e943a2cf18a34d5d
-  - enabled: 1
     path: Assets/Scenes/HelpScreenScene.unity
     guid: cc18d5f8a15799346901082a48aa6b26
   - enabled: 1

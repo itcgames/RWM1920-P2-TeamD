@@ -16,15 +16,15 @@ public class ButtonScript : MonoBehaviour
             {
                 if(hit.transform.gameObject.tag == "NewGame")
                 {
-                    SceneManager.LoadScene(5);
+                    SceneManager.LoadScene(4);
                 }
                 if (hit.transform.gameObject.tag == "Options")
                 {
-                    SceneManager.LoadScene(4);
+                    SceneManager.LoadScene(3);
                 }
                 if (hit.transform.gameObject.tag == "HelpMenu")
                 {
-                    SceneManager.LoadScene(1);
+                    SceneManager.LoadScene(0);
                 }
                 if (hit.transform.gameObject.tag == "Quit")
                 {
@@ -32,7 +32,7 @@ public class ButtonScript : MonoBehaviour
                 }
                 if (hit.transform.gameObject.tag == "BackToMenu")
                 {
-                    SceneManager.LoadScene(3);
+                    SceneManager.LoadScene(2);
                 }
             }
         }
@@ -40,15 +40,15 @@ public class ButtonScript : MonoBehaviour
 
     public void GoToMainMenu()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(2);
     }
 
     public void goToLevel1()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(4);
     }
     public void goToLevel2()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(1);
     }
 }
