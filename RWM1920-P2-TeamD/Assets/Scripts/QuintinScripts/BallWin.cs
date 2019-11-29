@@ -25,13 +25,18 @@ public class BallWin : MonoBehaviour
             if(scene.name == "MainScene")
             {
 				gameWinSource.Play();
-                SceneManager.LoadScene(2);//level 2
+                SceneManager.LoadScene(1);//level 2
             }
             else if (scene.name == "Level 2")
             {
                 gameWinSource.Play();
+                SceneManager.LoadScene(7);//level3
+            }
+            else if (scene.name == "Level3")
+            {
+                Debug.Log("qwrt");
+                gameWinSource.Play();
                 SceneManager.LoadScene(5);//credits
-
             }
         }
     }

@@ -24,7 +24,7 @@ public class ButtonScript : MonoBehaviour
                 }
                 if (hit.transform.gameObject.tag == "HelpMenu")
                 {
-                    SceneManager.LoadScene(0);
+                    SceneManager.LoadScene(6);
                 }
                 if (hit.transform.gameObject.tag == "Quit")
                 {
