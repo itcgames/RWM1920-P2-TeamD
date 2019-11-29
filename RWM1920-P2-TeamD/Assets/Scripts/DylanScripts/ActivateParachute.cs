@@ -15,7 +15,8 @@ public class ActivateParachute : MonoBehaviour
 	// Update is called once per frame
 	void Update()
     {
-        if(Input.GetKeyDown("space"))
+		parachuteSource.volume = PlayerPrefs.GetFloat("volume");
+		if (Input.GetKeyDown("space"))
 		{
 			parachuteSource.Play();
 			parachute.SetActive(true);

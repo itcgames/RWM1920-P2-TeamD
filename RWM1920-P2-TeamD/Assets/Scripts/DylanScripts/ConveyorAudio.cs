@@ -13,5 +13,10 @@ public class ConveyorAudio : MonoBehaviour
 		beltSource.Play();
     }
 
-    
+	private void Update()
+	{
+		beltSource.volume = PlayerPrefs.GetFloat("volume");
+	}
+
+
 }

@@ -14,5 +14,10 @@ public class GravityAudio : MonoBehaviour
 		gravitySource.Play();
     }
 
-    
+	private void Update()
+	{
+		gravitySource.volume = PlayerPrefs.GetFloat("volume");
+	}
+
+
 }

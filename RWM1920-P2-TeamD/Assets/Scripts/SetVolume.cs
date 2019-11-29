@@ -10,11 +10,14 @@ public class SetVolume : MonoBehaviour
 
     public Slider slider;
 
+	public AudioSource volumeModifier;
+
     public string paramaterName;
 
     private void Awake()
     {
-        float savedVol = PlayerPrefs.GetFloat(paramaterName, slider.maxValue);
+		volumeModifier.volume = PlayerPrefs.GetFloat("volume");
+		float savedVol = PlayerPrefs.GetFloat("volume");
         SetLevel(savedVol);
         slider.value = savedVol;
         slider.onValueChanged.AddListener((float _) => SetLevel(_));
@@ -24,7 +27,9 @@ public class SetVolume : MonoBehaviour
     {
         mixer.SetFloat(paramaterName, ConvertToDecibel(value/slider.maxValue));
         PlayerPrefs.SetFloat(paramaterName, value);
-    }
+		volumeModifier.volume = PlayerPrefs.GetFloat("volume");
+	
+	}
 
     public float ConvertToDecibel(float value)
     {

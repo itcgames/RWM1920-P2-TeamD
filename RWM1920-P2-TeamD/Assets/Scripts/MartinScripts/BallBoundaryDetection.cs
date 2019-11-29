@@ -15,7 +15,8 @@ public class BallBoundaryDetection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.y < -5.8)
+		gameLossSource.volume = PlayerPrefs.GetFloat("volume");
+		if (transform.position.y < -5.8)
         {
 			gameLossSource.Play();
             transform.position = new Vector3(0, 4, 0);

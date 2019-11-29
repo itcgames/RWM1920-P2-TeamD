@@ -9,9 +9,15 @@ public class menuBGAudio : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+		menuBGSource.volume = PlayerPrefs.GetFloat("volume");
 		menuBGSource.clip = menuBGClip;
 		menuBGSource.Play();
     }
 
-  
+	private void Update()
+	{
+		menuBGSource.volume = PlayerPrefs.GetFloat("volume");
+	}
+
+
 }
