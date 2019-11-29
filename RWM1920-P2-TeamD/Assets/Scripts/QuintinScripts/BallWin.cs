@@ -27,7 +27,6 @@ public class BallWin : MonoBehaviour
                 SceneManager.LoadScene(5);//credits
 
 				gameWinSource.Play();
-				SceneManager.LoadScene(2);//should be level 3 0r credits
 
             }
         }

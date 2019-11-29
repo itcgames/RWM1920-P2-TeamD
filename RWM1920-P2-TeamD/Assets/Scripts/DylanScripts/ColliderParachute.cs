@@ -8,10 +8,13 @@ public class ColliderParachute : MonoBehaviour
 
 	private void OnCollisionEnter2D(Collision2D other)
 	{
-		print("trigger");
-		parachute.SetActive(false);
-		gameObject.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
-		parachute.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
+		if (other.gameObject.tag != "parachute")
+		{
+			print("trigger");
+			parachute.SetActive(false);
+			gameObject.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
+			parachute.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
+		}
 
 	}
 
