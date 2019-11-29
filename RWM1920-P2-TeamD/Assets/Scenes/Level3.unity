@@ -531,6 +531,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5187884297514560336, guid: 81aa78a04296f844d8c0aba362784e6a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81aa78a04296f844d8c0aba362784e6a, type: 3}
 --- !u!1 &1297656100
@@ -701,6 +706,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: PipeLever
       objectReference: {fileID: 0}
+    - target: {fileID: 114417194849860928, guid: 30bf6d2a489633f4cb5cffb64ca1618a,
+        type: 3}
+      propertyPath: pipeScript
+      value: 
+      objectReference: {fileID: 153107279}
     - target: {fileID: 5044891337310409774, guid: 30bf6d2a489633f4cb5cffb64ca1618a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -756,11 +766,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114417194849860928, guid: 30bf6d2a489633f4cb5cffb64ca1618a,
-        type: 3}
-      propertyPath: pipeScript
-      value: 
-      objectReference: {fileID: 153107279}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30bf6d2a489633f4cb5cffb64ca1618a, type: 3}
 --- !u!1001 &1756295771
@@ -970,6 +975,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: PipeLever
       objectReference: {fileID: 0}
+    - target: {fileID: 114417194849860928, guid: 30bf6d2a489633f4cb5cffb64ca1618a,
+        type: 3}
+      propertyPath: pipeScript
+      value: 
+      objectReference: {fileID: 380409338}
     - target: {fileID: 5044891337310409774, guid: 30bf6d2a489633f4cb5cffb64ca1618a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1025,11 +1035,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114417194849860928, guid: 30bf6d2a489633f4cb5cffb64ca1618a,
-        type: 3}
-      propertyPath: pipeScript
-      value: 
-      objectReference: {fileID: 380409338}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30bf6d2a489633f4cb5cffb64ca1618a, type: 3}
 --- !u!1001 &1980742889
