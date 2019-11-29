@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7539871994423354908}
   - component: {fileID: 1970360814997775524}
   - component: {fileID: 4112941108446588637}
+  - component: {fileID: 6205743104193220879}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Ball
@@ -120,6 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameLossSource: {fileID: 7539871994423354908}
+  gameLossSource: {fileID: 6205743104193220879}
   gameLossClip: {fileID: 8300000, guid: 15d27260253f52041b193e00d0f0eb0c, type: 3}
 --- !u!58 &58683688939816644
 CircleCollider2D:
@@ -138,6 +140,7 @@ CircleCollider2D:
   serializedVersion: 2
   m_Radius: 1.53
 --- !u!82 &7539871994423354908
+--- !u!82 &6205743104193220879
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,6 +151,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 15d27260253f52041b193e00d0f0eb0c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
