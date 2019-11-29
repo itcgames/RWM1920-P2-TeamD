@@ -7,6 +7,7 @@ public class TriggerFire : MonoBehaviour
     public float gameTimer;
     public bool start;
     public GameObject gun;
+    public Vector3 startPos;
     void Start()
     {
         start = false;
@@ -17,6 +18,7 @@ public class TriggerFire : MonoBehaviour
         {
             start = true;
             gameTimer = 0.0f;
+            startPos = transform.position;
         }
         if (start)
         {
@@ -45,6 +47,7 @@ public class TriggerFire : MonoBehaviour
             {
                 start = false;
                 gun.transform.localScale = new Vector3(gun.transform.localScale.x, gun.transform.localScale.y, 1);
+                transform.position = startPos;
             }
         }
     }

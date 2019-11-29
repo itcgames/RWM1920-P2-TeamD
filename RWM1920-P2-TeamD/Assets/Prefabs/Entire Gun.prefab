@@ -185,7 +185,6 @@ GameObject:
   - component: {fileID: 8713290660182213799}
   - component: {fileID: 7822122578326294786}
   - component: {fileID: 1107364026918705776}
-  - component: {fileID: 533888854}
   m_Layer: 0
   m_Name: Trigger
   m_TagString: Untagged
@@ -270,32 +269,7 @@ MonoBehaviour:
   gameTimer: 0
   start: 0
   gun: {fileID: 1765892155451685658}
---- !u!61 &533888854
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3569081136662889161}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 1.14, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 8, y: 5.5}
-    newSize: {x: 8, y: 5.5}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 7, y: 4.5}
-  m_EdgeRadius: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!1 &3926878941057184476
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,7 +281,6 @@ GameObject:
   - component: {fileID: 742284244441458453}
   - component: {fileID: 2765247694797020706}
   - component: {fileID: 5083179216447321755}
-  - component: {fileID: 1165602038}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -394,32 +367,6 @@ MonoBehaviour:
   start: 0
   noSpam: 0
   gun: {fileID: 1765892155451685658}
---- !u!61 &1165602038
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3926878941057184476}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 8, y: 5.5}
-    newSize: {x: 8, y: 5.5}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 8, y: 5.5}
-  m_EdgeRadius: 0
 --- !u!1 &4218850169260684314
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,7 +378,6 @@ GameObject:
   - component: {fileID: 1317491543882081999}
   - component: {fileID: 5878070697929842750}
   - component: {fileID: 1107364026932998770}
-  - component: {fileID: 658974060}
   m_Layer: 0
   m_Name: Stock
   m_TagString: Untagged
@@ -519,32 +465,7 @@ MonoBehaviour:
   start: 0
   noSpam: 0
   gun: {fileID: 1765892155451685658}
---- !u!61 &658974060
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4218850169260684314}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.37, y: -3.44}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 8, y: 5.5}
-    newSize: {x: 8, y: 5.5}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 7, y: 4.5}
-  m_EdgeRadius: 0
+  startPos: {x: 0, y: 0, z: 0}
 --- !u!1 &9221887528732190573
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,7 +477,6 @@ GameObject:
   - component: {fileID: 8043702325149076709}
   - component: {fileID: 3559208534477259097}
   - component: {fileID: 1107364028435170774}
-  - component: {fileID: 1144022031}
   m_Layer: 0
   m_Name: Hammer
   m_TagString: Untagged
@@ -641,29 +561,3 @@ MonoBehaviour:
   gameTimer: 0
   start: 0
   gun: {fileID: 1765892155451685658}
---- !u!61 &1144022031
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9221887528732190573}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -1.02, y: -2.12}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 1.06, y: 1.08}
-    newSize: {x: 1.06, y: 1.08}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 4.5, y: 7}
-  m_EdgeRadius: 0
