@@ -5,8 +5,13 @@ using UnityEngine;
 public class MartinPipeScript : MonoBehaviour
 {
     bool active = false;
-
-    private void Update()
+	public AudioSource pipeSource;
+	public AudioClip pipeClip;
+	private void Start()
+	{
+		pipeSource.clip = pipeClip;
+	}
+	private void Update()
     {
        
     }
@@ -15,9 +20,11 @@ public class MartinPipeScript : MonoBehaviour
     {
         if (active)
         {
+			pipeSource.Play();
             if (collision.gameObject.GetComponent<Rigidbody2D>().transform.position.y > this.GetComponent<Transform>().position.y)
             {
-                Transform otherObj = collision.gameObject.GetComponent<Rigidbody2D>().transform;
+				Debug.Log("Downcollision");
+				Transform otherObj = collision.gameObject.GetComponent<Rigidbody2D>().transform;
                 otherObj.SetPositionAndRotation(new Vector3(otherObj.position.x, otherObj.position.y - this.GetComponent<Renderer>().bounds.size.y - otherObj.GetComponent<Renderer>().bounds.size.y, otherObj.position.z), new Quaternion());
             }
             else if (collision.gameObject.GetComponent<Rigidbody2D>().transform.position.y < this.GetComponent<Transform>().position.y)

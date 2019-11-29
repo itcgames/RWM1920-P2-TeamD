@@ -13,6 +13,7 @@ TagManager:
   - ConveyorLever
   - BackToMenu
   - ResetBT
+  - GravityLever
   layers:
   - Default
   - TransparentFX

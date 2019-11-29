@@ -25,28 +25,19 @@ public class LeverBehaviour : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if(leverLeft)
         {
-            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-
-            if (hit.transform != null)
-            {
-                if (hit.transform.tag == "PipeLever")
-                {
-                    Debug.Log("pipe lever works");
-                    pipeScript.toggleActive();
-                }
-                else if (hit.transform.tag == "ConveyorLever")
-                {
-                    cog1Rotate.ToggleRight();
-                    cog2Rotate.ToggleRight();
-                    conveyorBelt.toggleEndpoint();
-                }
-            }
+            this.GetComponent<SpriteRenderer>().sprite = Left;
         }
+        else
+        {
+            this.GetComponent<SpriteRenderer>().sprite = Right;
+        }
+
+        print(leverLeft);
     }
 
-    private void printName(GameObject go)
+    private void OnMouseOver()
     {
         if (Input.GetMouseButtonDown(0) && this.tag == "PipeLever")
         {
