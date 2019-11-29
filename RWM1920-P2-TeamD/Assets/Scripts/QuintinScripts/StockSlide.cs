@@ -8,6 +8,7 @@ public class StockSlide : MonoBehaviour
     public GameObject bulletCasing;
     public bool start, noSpam;
     public GameObject gun;
+    public Vector3 startPos;
     void Start()
     {
         start = false;
@@ -20,6 +21,7 @@ public class StockSlide : MonoBehaviour
             start = true;
             noSpam = true;
             gameTimer = 0.0f;
+            startPos = transform.position;
         }
         if (start)
         {
@@ -30,8 +32,8 @@ public class StockSlide : MonoBehaviour
                 Vector3 newPosition = transform.position;
                 newVector.x = Mathf.Cos(((transform.rotation.eulerAngles.z + 180) * Mathf.PI) / 180);
                 newVector.y = Mathf.Sin(((transform.rotation.eulerAngles.z + 180) * Mathf.PI) / 180);
-                newPosition.x += newVector.x / 5;
-                newPosition.y += newVector.y / 5;
+                newPosition.x += newVector.x / 5 * setScale.GUN_SCALE;
+                newPosition.y += newVector.y / 5 * setScale.GUN_SCALE;
                 transform.position = newPosition;
             }
             else if (gameTimer >= 0.4f && gameTimer < 0.5f && noSpam)
@@ -52,13 +54,14 @@ public class StockSlide : MonoBehaviour
                 Vector3 newPosition = transform.position;
                 newVector.x = Mathf.Cos(((transform.rotation.eulerAngles.z) * Mathf.PI) / 180);
                 newVector.y = Mathf.Sin(((transform.rotation.eulerAngles.z) * Mathf.PI) / 180);
-                newPosition.x += newVector.x / 5;
-                newPosition.y += newVector.y / 5;
+                newPosition.x += newVector.x / 5 * setScale.GUN_SCALE;
+                newPosition.y += newVector.y / 5 * setScale.GUN_SCALE;
                 transform.position = newPosition;
             }
             else if (gameTimer > 0.6f)
             {
                 start = false;
+                transform.position = startPos;
             }
         }
 

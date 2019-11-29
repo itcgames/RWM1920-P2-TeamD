@@ -34,7 +34,7 @@ public class LeverBehaviour : MonoBehaviour
             this.GetComponent<SpriteRenderer>().sprite = Right;
         }
 
-        print(leverLeft);
+        //print(leverLeft);
     }
 
     private void OnMouseOver()

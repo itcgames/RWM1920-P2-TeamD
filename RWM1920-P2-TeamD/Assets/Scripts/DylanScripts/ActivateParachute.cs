@@ -22,7 +22,7 @@ public class ActivateParachute : MonoBehaviour
 		}
 
 
-		parachute.transform.position = gameObject.transform.position + new Vector3(0.0f, 1.2f, 0.0f);
+		parachute.transform.position = gameObject.transform.position + new Vector3(0.0f, 1.0f, 0.0f);
 
 	}
 }
