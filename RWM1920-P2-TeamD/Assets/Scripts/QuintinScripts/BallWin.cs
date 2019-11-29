@@ -13,6 +13,7 @@ public class BallWin : MonoBehaviour
 	}
 	void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("collision");
         if (other.name == "Ball")
         {
             Scene scene = SceneManager.GetActiveScene();
@@ -23,11 +24,8 @@ public class BallWin : MonoBehaviour
             }
             else if (scene.name == "Level 2")
             {
-
+                gameWinSource.Play();
                 SceneManager.LoadScene(5);//credits
-
-				gameWinSource.Play();
-				SceneManager.LoadScene(2);//should be level 3 0r credits
 
             }
         }
