@@ -10,6 +10,11 @@ public class BallWin : MonoBehaviour
 	private void Start()
 	{
 		gameWinSource.clip = gameWinClip;
+
+	}
+	private void Update()
+	{
+		gameWinSource.volume = PlayerPrefs.GetFloat("volume");
 	}
 	void OnTriggerEnter2D(Collider2D other)
     {

@@ -20,8 +20,11 @@ public class setScale : MonoBehaviour
         }
         transform.localScale = new Vector3(GUN_SCALE, GUN_SCALE,1);
     }
-
-    void OnMouseOver()
+	private void Update()
+	{
+		gunSource.volume = PlayerPrefs.GetFloat("volume");
+	}
+	void OnMouseOver()
     {
         if (Input.GetMouseButtonDown(0))
         {

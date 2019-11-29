@@ -25,7 +25,8 @@ public class LeverBehaviour : MonoBehaviour
 
     private void Update()
     {
-        if(leverLeft)
+		leverSource.volume = PlayerPrefs.GetFloat("volume");
+		if (leverLeft)
         {
             this.GetComponent<SpriteRenderer>().sprite = Left;
         }

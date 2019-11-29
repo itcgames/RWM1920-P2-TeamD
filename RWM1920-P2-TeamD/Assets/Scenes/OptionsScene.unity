@@ -662,7 +662,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 1
+          m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -680,6 +680,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mixer: {fileID: 24100000, guid: f1ad2040696aa474f846da0be4a745ec, type: 2}
   slider: {fileID: 568019429}
+  volumeModifier: {fileID: 1901308915}
   paramaterName: volume
 --- !u!1 &678455152
 GameObject:

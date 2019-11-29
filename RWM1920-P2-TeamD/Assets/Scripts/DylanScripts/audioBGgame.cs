@@ -13,5 +13,10 @@ public class audioBGgame : MonoBehaviour
 		gameBGSource.Play();
     }
 
-   
+	private void Update()
+	{
+		gameBGSource.volume = PlayerPrefs.GetFloat("volume");
+	}
+
+
 }

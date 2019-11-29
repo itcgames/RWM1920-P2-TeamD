@@ -13,8 +13,8 @@ public class MartinPipeScript : MonoBehaviour
 	}
 	private void Update()
     {
-       
-    }
+		pipeSource.volume = PlayerPrefs.GetFloat("volume");
+	}
 
     public void OnCollisionEnter2D(Collision2D collision)
     {

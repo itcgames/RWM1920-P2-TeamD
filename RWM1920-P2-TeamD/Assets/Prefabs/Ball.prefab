@@ -13,10 +13,9 @@ GameObject:
   - component: {fileID: 2778090198643897102}
   - component: {fileID: 2778090198643897103}
   - component: {fileID: 58683688939816644}
-  - component: {fileID: 7539871994423354908}
   - component: {fileID: 1970360814997775524}
   - component: {fileID: 4112941108446588637}
-  - component: {fileID: 6205743104193220879}
+  - component: {fileID: 23595360}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Ball
@@ -120,8 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed12bff25db8dcc40b99787f85f90b64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameLossSource: {fileID: 7539871994423354908}
-  gameLossSource: {fileID: 6205743104193220879}
+  gameLossSource: {fileID: 23595360}
   gameLossClip: {fileID: 8300000, guid: 15d27260253f52041b193e00d0f0eb0c, type: 3}
 --- !u!58 &58683688939816644
 CircleCollider2D:
@@ -139,8 +137,35 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.53
---- !u!82 &7539871994423354908
---- !u!82 &6205743104193220879
+--- !u!114 &1970360814997775524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2778090198643897090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e10689a4f2d08a849bdc2cbd1f4c2a87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parachute: {fileID: 5187884297514560336}
+  parachuteSource: {fileID: 23595360}
+  parachuteClip: {fileID: 8300000, guid: a08ba61152ba50b488246a5657ca4ca7, type: 3}
+--- !u!114 &4112941108446588637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2778090198643897090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fbe333f377c05542bf2779e01fc7118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parachute: {fileID: 5187884297514560336}
+--- !u!82 &23595360
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -151,7 +176,6 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 15d27260253f52041b193e00d0f0eb0c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -237,34 +261,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1970360814997775524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2778090198643897090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e10689a4f2d08a849bdc2cbd1f4c2a87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parachute: {fileID: 5187884297514560336}
-  parachuteSource: {fileID: 7539871994423354908}
-  parachuteClip: {fileID: 8300000, guid: a08ba61152ba50b488246a5657ca4ca7, type: 3}
---- !u!114 &4112941108446588637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2778090198643897090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fbe333f377c05542bf2779e01fc7118, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parachute: {fileID: 5187884297514560336}
 --- !u!1001 &2778090198858308648
 PrefabInstance:
   m_ObjectHideFlags: 0
