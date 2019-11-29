@@ -22,4 +22,9 @@ public class RotateObj : MonoBehaviour
 
         }
     }
+
+    public void rotate90()
+    {
+        transform.Rotate(0, 0, 180);
+    }
 }

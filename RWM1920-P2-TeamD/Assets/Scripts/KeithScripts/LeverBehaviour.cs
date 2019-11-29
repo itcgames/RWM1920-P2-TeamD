@@ -8,8 +8,22 @@ public class LeverBehaviour : MonoBehaviour
     public ConveyorBelt conveyorBelt;
     public Rotate cog1Rotate;
     public Rotate cog2Rotate;
-    // Update is called once per frame
-    void Update()
+
+    public RotateObj gravBox;
+	public AudioSource leverSource;
+	public AudioClip leverClip;
+
+    bool leverLeft = true;
+
+    public Sprite Left;
+    public Sprite Right;
+
+	private void Start()
+	{
+		leverSource.clip = leverClip;
+	}
+
+    private void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
@@ -34,6 +48,41 @@ public class LeverBehaviour : MonoBehaviour
 
     private void printName(GameObject go)
     {
-        print(go.name);
+        if (Input.GetMouseButtonDown(0) && this.tag == "PipeLever")
+        {
+            leverSource.Play();
+            Debug.Log("pipe lever works");
+            pipeScript.toggleActive();
+            toggleLeverLeft();
+        }
+
+        if (Input.GetMouseButtonDown(0) && this.tag == "ConveyorLever")
+        {
+            leverSource.Play();
+            cog1Rotate.ToggleRight();
+            cog2Rotate.ToggleRight();
+            conveyorBelt.toggleEndpoint();
+            toggleLeverLeft();
+        }
+
+        if (Input.GetMouseButtonDown(0) && this.tag == "GravityLever")
+        {
+            leverSource.Play();
+            gravBox.rotate90();
+            toggleLeverLeft();
+        }
+    }
+
+    void toggleLeverLeft()
+    {
+        if(leverLeft)
+        {
+            leverLeft = false;
+        }
+        else
+        {
+            leverLeft = true;
+        }
+
     }
 }
