@@ -10,6 +10,11 @@ public class BallWin : MonoBehaviour
 	private void Start()
 	{
 		gameWinSource.clip = gameWinClip;
+
+	}
+	private void Update()
+	{
+		gameWinSource.volume = PlayerPrefs.GetFloat("volume");
 	}
 	void OnTriggerEnter2D(Collider2D other)
     {
@@ -20,7 +25,7 @@ public class BallWin : MonoBehaviour
             if(scene.name == "MainScene")
             {
 				gameWinSource.Play();
-                SceneManager.LoadScene(2);//level 2
+                SceneManager.LoadScene(1);//level 2
             }
             else if (scene.name == "Level 2")
             {
@@ -36,7 +41,6 @@ public class BallWin : MonoBehaviour
             {
                 gameWinSource.Play();
                 SceneManager.LoadScene(5);//credits
-
             }
         }
     }

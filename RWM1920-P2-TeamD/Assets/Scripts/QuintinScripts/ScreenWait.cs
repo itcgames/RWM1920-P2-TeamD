@@ -18,7 +18,7 @@ public class ScreenWait : MonoBehaviour
         timer  += Time.deltaTime;
         if(timer > timeLimit)
         {
-            SceneManager.LoadScene(3);//main menu
+            SceneManager.LoadScene(2);//main menu
         }
     }
 }

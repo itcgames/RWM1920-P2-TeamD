@@ -15,14 +15,15 @@ public class ActivateParachute : MonoBehaviour
 	// Update is called once per frame
 	void Update()
     {
-        if(Input.GetKeyDown("space"))
+		parachuteSource.volume = PlayerPrefs.GetFloat("volume");
+		if (Input.GetKeyDown("space"))
 		{
 			parachuteSource.Play();
 			parachute.SetActive(true);
 		}
 
 
-		parachute.transform.position = gameObject.transform.position + new Vector3(0.0f, 1.2f, 0.0f);
+		parachute.transform.position = gameObject.transform.position + new Vector3(0.0f, 1.0f, 0.0f);
 
 	}
 }

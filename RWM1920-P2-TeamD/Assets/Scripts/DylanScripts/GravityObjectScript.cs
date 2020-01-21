@@ -12,6 +12,7 @@ public class GravityObjectScript : MonoBehaviour
     {
 		if (this.gameObject.activeSelf == true)
 		{
+			gameObject.transform.rotation = new Quaternion(0.0f, 0.0f, 0.0f, 1.0f);
 			objectFalling.GetComponent<Rigidbody2D>().gravityScale = 0.1f;
 			gameObject.GetComponent<Rigidbody2D>().gravityScale = 0.1f;
 		}
