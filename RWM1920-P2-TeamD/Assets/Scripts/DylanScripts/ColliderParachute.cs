@@ -8,7 +8,7 @@ public class ColliderParachute : MonoBehaviour
 
 	private void OnCollisionEnter2D(Collision2D other)
 	{
-		if (other.gameObject.tag != "parachute")
+		if (other.gameObject.tag != "Parachute")
 		{
 			print("trigger");
 			parachute.SetActive(false);
