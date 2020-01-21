@@ -4,16 +4,20 @@ using UnityEngine;
 
 public class AchIndividual : MonoBehaviour
 {
-    public bool isStored = true;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
+    public static AchIndividual Instance;
 
-    // Update is called once per frame
-    void Update()
+    void Awake()
     {
-        
+        if (Instance == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            Instance = this;
+        }
+        else if (Instance != this)
+        {
+            Destroy(gameObject);
+        }
     }
+    
 }
