@@ -34,7 +34,11 @@ public class BallWin : MonoBehaviour
             }
             else if (scene.name == "Level3")
             {
-                Debug.Log("qwrt");
+                gameWinSource.Play();
+                SceneManager.LoadScene(8);//level4
+            }
+            else if (scene.name == "Level4")
+            {
                 gameWinSource.Play();
                 SceneManager.LoadScene(5);//credits
             }

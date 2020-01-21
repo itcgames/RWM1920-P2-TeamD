@@ -29,5 +29,10 @@ public class BulletMove : MonoBehaviour
         {
 			other.gameObject.SetActive(false);
         }
-	}
+        if (other.gameObject.tag == "Plank")
+        {
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+        }
+    }
 }
