@@ -59,4 +59,9 @@ public class ButtonScript : MonoBehaviour
     {
         SceneManager.LoadScene(7);
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }

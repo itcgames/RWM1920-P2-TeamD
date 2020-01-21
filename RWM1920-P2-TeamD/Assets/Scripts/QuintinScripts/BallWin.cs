@@ -25,11 +25,13 @@ public class BallWin : MonoBehaviour
             if(scene.name == "MainScene")
             {
 				gameWinSource.Play();
+                PlayerPrefs.SetInt("Score",PlayerPrefs.GetInt("Score") + (200 * PlayerPrefs.GetInt("Health")));
                 SceneManager.LoadScene(1);//level 2
             }
             else if (scene.name == "Level 2")
             {
                 gameWinSource.Play();
+                PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + (200 * PlayerPrefs.GetInt("Health")));
                 SceneManager.LoadScene(7);//level3
             }
             else if (scene.name == "Level3")
@@ -40,6 +42,9 @@ public class BallWin : MonoBehaviour
             else if (scene.name == "Level4")
             {
                 gameWinSource.Play();
+                PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + (200 * PlayerPrefs.GetInt("Health")));
+                PlayerPrefs.SetInt("Health", 5);
+                PlayerPrefs.SetInt("Score", 0);
                 SceneManager.LoadScene(5);//credits
             }
         }
