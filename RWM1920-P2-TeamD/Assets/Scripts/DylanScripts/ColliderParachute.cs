@@ -14,8 +14,5 @@ public class ColliderParachute : MonoBehaviour
 			gameObject.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
 			parachute.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
 		}
-
 	}
-
-	
 }

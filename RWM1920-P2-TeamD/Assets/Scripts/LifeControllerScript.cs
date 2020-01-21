@@ -2,12 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LifeControllerScript : MonoBehaviour
 {
     public GameObject heart1, heart2, heart3, heart4, heart5;
+    public Text timeTxt;
+    public Text Score;
     public static int health = 5;
-    
+    public float timeLeft = 0;
+
     private static LifeControllerScript Instance;
     // Start is called before the first frame update
 
@@ -21,6 +25,7 @@ public class LifeControllerScript : MonoBehaviour
             heart4.gameObject.SetActive(true);
             heart5.gameObject.SetActive(true);
 
+            PlayerPrefs.SetInt("Score", 0);
             PlayerPrefs.SetInt("Health", health);
             PlayerPrefs.SetInt("isFirstTime", 1);
             PlayerPrefs.Save();
@@ -31,8 +36,6 @@ public class LifeControllerScript : MonoBehaviour
         }
     }
 
-    
-
     // Update is called once per frame
     void Update()
     {
@@ -41,8 +44,19 @@ public class LifeControllerScript : MonoBehaviour
             PlayerPrefs.SetInt("Health", 5);
         }
 
-        print(PlayerPrefs.GetInt("Health"));
-       
+        timeLeft -= Time.deltaTime;
+        
+        if(timeLeft <= 0)
+        {
+            timeLeft = 20;
+            PlayerPrefs.SetInt("Health", PlayerPrefs.GetInt("Health") - 1);
+        }
+
+        timeTxt.text = "Time: " + (int)timeLeft;
+        Score.text = "Score: " + PlayerPrefs.GetInt("Score");
+
+        print(timeLeft);
+
         switch (PlayerPrefs.GetInt("Health"))
         {
             case 5:
@@ -87,9 +101,9 @@ public class LifeControllerScript : MonoBehaviour
                 heart4.gameObject.SetActive(false);
                 heart5.gameObject.SetActive(false);
                 PlayerPrefs.SetInt("Health", 5);
+                PlayerPrefs.SetInt("Score", 0);
                 SceneManager.LoadScene(8);
                 break;
         }
-
     }
 }

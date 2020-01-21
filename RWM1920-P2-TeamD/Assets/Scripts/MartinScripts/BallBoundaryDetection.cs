@@ -49,7 +49,6 @@ public class BallBoundaryDetection : MonoBehaviour
             this.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
             PlayerPrefs.SetInt("Health", PlayerPrefs.GetInt("Health") - 1);
             print(PlayerPrefs.GetInt("Health"));
-
         }
 
 

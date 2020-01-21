@@ -44,6 +44,7 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = false;
         Scene scene = SceneManager.GetActiveScene();
         PlayerPrefs.SetInt("Health", 5);
+        PlayerPrefs.SetInt("Score", 0);
         SceneManager.LoadScene(scene.name);
     }
 
@@ -53,8 +54,8 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = false;
         Time.timeScale = 1f;
         PlayerPrefs.SetInt("Health", 5);
+        PlayerPrefs.SetInt("Score", 0);
         SceneManager.LoadScene(2);
-        
     }
 
     public void Quit()
@@ -62,6 +63,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
         GameIsPaused = false;
         PlayerPrefs.SetInt("Health", 5);
+        PlayerPrefs.SetInt("Score", 0);
         Application.Quit();
     }
 }
