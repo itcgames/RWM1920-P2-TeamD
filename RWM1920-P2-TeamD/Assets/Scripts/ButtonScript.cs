@@ -34,6 +34,10 @@ public class ButtonScript : MonoBehaviour
                 {
                     SceneManager.LoadScene(2);
                 }
+                if(hit.transform.gameObject.tag == "level3")
+                {
+                    SceneManager.LoadScene(7);
+                }
             }
         }
     }
@@ -50,5 +54,9 @@ public class ButtonScript : MonoBehaviour
     public void goToLevel2()
     {
         SceneManager.LoadScene(1);
+    }
+    public void goToLevel3()
+    {
+        SceneManager.LoadScene(7);
     }
 }
