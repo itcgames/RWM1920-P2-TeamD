@@ -36,6 +36,7 @@ public class BallWin : MonoBehaviour
             {
                 Debug.Log("qwrt");
                 gameWinSource.Play();
+                PlayerPrefs.SetInt("Health", 5);
                 SceneManager.LoadScene(5);//credits
             }
         }
