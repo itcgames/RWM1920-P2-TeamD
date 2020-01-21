@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ActivateParachute : MonoBehaviour
+public class MobileActivateParachute : MonoBehaviour
 {
 	[SerializeField] private GameObject parachute;
 
@@ -13,21 +13,17 @@ public class ActivateParachute : MonoBehaviour
 		parachuteSource.clip = parachuteClip;
 	}
 	// Update is called once per frame
-	void Update()
-    {
+	void OnMouseOver()
+	{
 		parachuteSource.volume = PlayerPrefs.GetFloat("volume");
-		if (Input.GetKeyDown("space"))
-		{
-			parachuteSource.Play();
-			setParachuteActive();
-		}
-
-
-		parachute.transform.position = gameObject.transform.position + new Vector3(0.0f, 1.0f, 0.0f);
+		parachuteSource.Play();
+		parachute.SetActive(true);
+	
 
 	}
-	public void setParachuteActive()
+	private void Update()
 	{
-		parachute.SetActive(true);
+		parachute.transform.position = gameObject.transform.position + new Vector3(0.0f, 1.0f, 0.0f);
+
 	}
 }
