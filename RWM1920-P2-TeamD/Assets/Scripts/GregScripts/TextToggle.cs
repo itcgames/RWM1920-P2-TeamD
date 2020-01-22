@@ -14,13 +14,8 @@ public class TextToggle : MonoBehaviour
         gameObject.GetComponent<Text>().text = "";
     }
     public void ShowHideText()
-    {
-        
-        
+    {    
         gameObject.GetComponent<Text>().text = txt;
-      
-           
-        
     }
     public void disableTxt()
         {
