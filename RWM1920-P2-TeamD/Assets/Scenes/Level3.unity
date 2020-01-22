@@ -1482,6 +1482,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2921366464201495108, guid: abaff191da9d9e14ca57b116c96030e5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018786474637704335, guid: abaff191da9d9e14ca57b116c96030e5,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1827698411}
+    - target: {fileID: 9018786474637704335, guid: abaff191da9d9e14ca57b116c96030e5,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: setParachuteActive
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abaff191da9d9e14ca57b116c96030e5, type: 3}
 --- !u!1001 &1756295771
@@ -1568,6 +1583,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb0623a0013eba248b7ef60a9ed8570c, type: 3}
+--- !u!114 &1827698411 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5906044266498368040, guid: 81aa78a04296f844d8c0aba362784e6a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1168630253}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e10689a4f2d08a849bdc2cbd1f4c2a87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1866115909
 PrefabInstance:
   m_ObjectHideFlags: 0
