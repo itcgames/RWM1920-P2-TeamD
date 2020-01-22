@@ -124,6 +124,7 @@ MonoBehaviour:
   conveyorBelt: {fileID: 0}
   cog1Rotate: {fileID: 0}
   cog2Rotate: {fileID: 0}
+  gravBox: {fileID: 0}
   leverSource: {fileID: 405339989}
   leverClip: {fileID: 8300000, guid: 9a551d16406df094bbb61a22a5804a06, type: 3}
   Left: {fileID: 21300000, guid: 5b235dbbc474a3446b1b41c42fae2c0a, type: 3}
@@ -140,7 +141,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.016
   m_Pitch: 1
   Loop: 0
   Mute: 0

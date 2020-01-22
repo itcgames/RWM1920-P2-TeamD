@@ -14,7 +14,7 @@ public class ButtonScript : MonoBehaviour
 
             if (hit.transform != null)
             {
-                if(hit.transform.gameObject.tag == "NewGame")
+                if (hit.transform.gameObject.tag == "NewGame")
                 {
                     SceneManager.LoadScene(4);
                 }
@@ -34,7 +34,7 @@ public class ButtonScript : MonoBehaviour
                 {
                     SceneManager.LoadScene(2);
                 }
-                if(hit.transform.gameObject.tag == "level3")
+                if (hit.transform.gameObject.tag == "level3")
                 {
                     SceneManager.LoadScene(7);
                 }
@@ -58,6 +58,14 @@ public class ButtonScript : MonoBehaviour
     public void goToLevel3()
     {
         SceneManager.LoadScene(7);
+    }
+    public void goToLevel4()
+    {
+        SceneManager.LoadScene(8);
+    }
+    public void goToCredits()
+    {
+        SceneManager.LoadScene(5);//credits
     }
 
     public void QuitGame()
