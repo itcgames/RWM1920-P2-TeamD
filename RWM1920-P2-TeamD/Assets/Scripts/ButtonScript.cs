@@ -38,6 +38,10 @@ public class ButtonScript : MonoBehaviour
                 {
                     SceneManager.LoadScene(7);
                 }
+                if (hit.transform.gameObject.tag == "LevelSelect")
+                {
+                    SceneManager.LoadScene(10);
+                }
             }
         }
     }

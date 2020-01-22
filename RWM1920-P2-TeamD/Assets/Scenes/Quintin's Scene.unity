@@ -194,6 +194,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &862816395 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1765892155451685658, guid: 165e47f58f94d384db7f776842f6d020,
+    type: 3}
+  m_PrefabInstance: {fileID: 1686264452}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &862816400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862816395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7fd643d8b776974dbf73998fa149057, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1686264452
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -260,6 +278,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 778598520545798343, guid: 165e47f58f94d384db7f776842f6d020,
+        type: 3}
+      propertyPath: scaleInput
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 165e47f58f94d384db7f776842f6d020, type: 3}
