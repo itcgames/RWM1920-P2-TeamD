@@ -50,8 +50,13 @@ public class BallWin : MonoBehaviour
             else if (scene.name == "Level5")
             {
                 gameWinSource.Play();
-                SceneManager.LoadScene(5);//credits
+                SceneManager.LoadScene(12);//level6
             }
+			else if(scene.name == "Level6")
+			{
+				gameWinSource.Play();
+				SceneManager.LoadScene(5);//credits
+			}
         }
     }
 }

@@ -67,7 +67,15 @@ public class ButtonScript : MonoBehaviour
     {
         SceneManager.LoadScene(8);
     }
-    public void goToCredits()
+	public void goToLevel5()
+	{
+		SceneManager.LoadScene(11);
+	}
+	public void goToLevel6()
+	{
+		SceneManager.LoadScene(12);
+	}
+	public void goToCredits()
     {
         SceneManager.LoadScene(5);//credits
     }
