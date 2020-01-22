@@ -34,9 +34,13 @@ public class GravityObjectScript : MonoBehaviour
 			//objectFalling.GetComponent<Rigidbody2D>().gravityScale = -0.0f;
 			//temp = (objectFalling.transform.position);
 			
-			objectFalling.GetComponent<Rigidbody2D>().velocity = new Vector3(0, -0.420f, 0);
+			objectFalling.GetComponent<Rigidbody2D>().velocity = new Vector3(objectFalling.GetComponent<Rigidbody2D>().velocity.x * .98f, objectFalling.GetComponent<Rigidbody2D>().velocity.y * .98f, 0);
 			objectFalling.GetComponent<Rigidbody2D>().gravityScale = 0.1f;
 			temp = objectFalling.transform.position;
+		}
+		else
+		{
+			objectFalling.GetComponent<Rigidbody2D>().gravityScale = 1.0f;
 		}
 		
 	}
