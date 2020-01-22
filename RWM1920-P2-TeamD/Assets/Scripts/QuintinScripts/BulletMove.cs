@@ -32,6 +32,11 @@ public class BulletMove : MonoBehaviour
         if (other.gameObject.tag == "Plank")
         {
             Destroy(other.gameObject);
+           
+
+        }
+        if (other.gameObject.tag != "Gun")
+        {
             Destroy(gameObject);
         }
     }
