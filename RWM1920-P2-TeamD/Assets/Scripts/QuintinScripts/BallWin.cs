@@ -45,8 +45,18 @@ public class BallWin : MonoBehaviour
                 PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + (200 * PlayerPrefs.GetInt("Health")));
                 PlayerPrefs.SetInt("Health", 5);
                 PlayerPrefs.SetInt("Score", 0);
-                SceneManager.LoadScene(5);//credits
+                SceneManager.LoadScene(11);//level5
             }
+            else if (scene.name == "Level5")
+            {
+                gameWinSource.Play();
+                SceneManager.LoadScene(12);//level6
+            }
+			else if(scene.name == "Level6")
+			{
+				gameWinSource.Play();
+				SceneManager.LoadScene(5);//credits
+			}
         }
     }
 }

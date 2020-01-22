@@ -1848,6 +1848,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameBGSource: {fileID: 1411534083}
   gameBGClip: {fileID: 8300000, guid: 1a73c90392f2a154fbc3596d6c698743, type: 3}
+--- !u!114 &1438013624 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4289623712137475931, guid: abaff191da9d9e14ca57b116c96030e5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1180831633}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1581851239 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1238286597939026182, guid: 9a6d432dcb49efe4bba8c8fb06c90d85,
@@ -1858,6 +1870,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79c9b7595a1b0174493feed98c49dcca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1619594788 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6114982087291503873, guid: abaff191da9d9e14ca57b116c96030e5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1180831633}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1627145489
@@ -1984,8 +2008,8 @@ MonoBehaviour:
   heart3: {fileID: 959079746}
   heart4: {fileID: 266517766}
   heart5: {fileID: 352068100}
-  timeTxt: {fileID: 0}
-  Score: {fileID: 0}
+  timeTxt: {fileID: 1438013624}
+  Score: {fileID: 1619594788}
   timeLeft: 20
 --- !u!4 &1716231731
 Transform:

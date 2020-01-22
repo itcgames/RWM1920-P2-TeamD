@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HammerSwing : MonoBehaviour
 {
-    public float gameTimer;
+    public float gameTimer,rotation;
     public bool start;
     public GameObject gun;
     void Start()
@@ -13,27 +13,35 @@ public class HammerSwing : MonoBehaviour
     }
     void Update()
     {
-        if (gun.transform.localScale.z == -1 && !start)
+        if (Time.timeScale == 1)
         {
-            start = true;
-            gameTimer = 0.0f;
-        }
-        if (start)
-        {
-            gameTimer += Time.deltaTime;
-            if (gameTimer >= 0.2f && gameTimer < 0.3f)
+            if (gun.transform.localScale.z == -1 && !start)
             {
-                Quaternion newRotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z - 14);
-                transform.rotation = newRotation;
+                start = true;
+                gameTimer = 0.0f;
             }
-            else if (gameTimer >= 0.3f && gameTimer < 0.4f)
+            if (start)
             {
-                Quaternion newRotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z + 14);
-                transform.rotation = newRotation;
+                gameTimer += Time.deltaTime;
+                if (gameTimer >= 0.2f && gameTimer < 0.3f)
+                {
+                    Quaternion newRotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z - 14);
+                    transform.rotation = newRotation;
+                }
+                else if (gameTimer >= 0.3f && gameTimer < 0.4f)
+                {
+                    Quaternion newRotation = Quaternion.Euler(0, 0, transform.rotation.eulerAngles.z + 14);
+                    transform.rotation = newRotation;
+                }
+                else if (gameTimer > 0.6f)
+                {
+                    start = false;
+
+                }
             }
-            else if (gameTimer > 0.6f)
+            else if (gun.transform.eulerAngles.z < 1)
             {
-                start = false;
+                transform.rotation = Quaternion.Euler(0, 0, 90);
             }
         }
     }
