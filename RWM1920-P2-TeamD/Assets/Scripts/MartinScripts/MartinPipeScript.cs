@@ -7,9 +7,14 @@ public class MartinPipeScript : MonoBehaviour
     bool active = false;
 	public AudioSource pipeSource;
 	public AudioClip pipeClip;
-	private void Start()
+    public Sprite pipeOpen;
+    public Sprite pipeClosed;
+    private void Start()
 	{
-		pipeSource.clip = pipeClip;
+        SpriteRenderer spriteR;
+        spriteR = GetComponent<SpriteRenderer>();
+        spriteR.sprite = pipeClosed;
+        pipeSource.clip = pipeClip;
 	}
 	private void Update()
     {
@@ -41,9 +46,15 @@ public class MartinPipeScript : MonoBehaviour
         if(active)
         {
             active = false;
+            SpriteRenderer spriteR;
+            spriteR = GetComponent<SpriteRenderer>();
+            spriteR.sprite = pipeClosed;
         }
         else
         {
+            SpriteRenderer spriteR;
+            spriteR = GetComponent<SpriteRenderer>();
+            spriteR.sprite = pipeOpen;
             active = true;
         } 
     }

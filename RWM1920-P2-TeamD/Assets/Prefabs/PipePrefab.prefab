@@ -149,6 +149,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pipeSource: {fileID: 1453528965}
   pipeClip: {fileID: 8300000, guid: 11b8495321e551647a9f2e0eacf40f55, type: 3}
+  pipeOpen: {fileID: 21300000, guid: fcc67037adb25444eb326d538f2afebe, type: 3}
+  pipeClosed: {fileID: 21300000, guid: db9158c58b5fd2044bcfb1106f0dae53, type: 3}
 --- !u!82 &1453528965
 AudioSource:
   m_ObjectHideFlags: 0
