@@ -199,6 +199,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConveyorBelt
       objectReference: {fileID: 0}
+    - target: {fileID: 2829624675383378966, guid: 9a6d432dcb49efe4bba8c8fb06c90d85,
+        type: 3}
+      propertyPath: endpointLeft
+      value: 
+      objectReference: {fileID: 1413014199}
+    - target: {fileID: 2829624675383378966, guid: 9a6d432dcb49efe4bba8c8fb06c90d85,
+        type: 3}
+      propertyPath: endpointRight
+      value: 
+      objectReference: {fileID: 376045860}
     - target: {fileID: 6639094350380232292, guid: 9a6d432dcb49efe4bba8c8fb06c90d85,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -254,16 +264,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2829624675383378966, guid: 9a6d432dcb49efe4bba8c8fb06c90d85,
-        type: 3}
-      propertyPath: endpointLeft
-      value: 
-      objectReference: {fileID: 1413014199}
-    - target: {fileID: 2829624675383378966, guid: 9a6d432dcb49efe4bba8c8fb06c90d85,
-        type: 3}
-      propertyPath: endpointRight
-      value: 
-      objectReference: {fileID: 376045860}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a6d432dcb49efe4bba8c8fb06c90d85, type: 3}
 --- !u!1001 &443024451
@@ -876,6 +876,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pause System
       objectReference: {fileID: 0}
+    - target: {fileID: 2921366464200998132, guid: abaff191da9d9e14ca57b116c96030e5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2921366464200998128, guid: abaff191da9d9e14ca57b116c96030e5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -981,6 +986,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3807390444924058314, guid: abaff191da9d9e14ca57b116c96030e5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9018786474637704335, guid: abaff191da9d9e14ca57b116c96030e5,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1001,9 +1011,14 @@ PrefabInstance:
       propertyPath: m_MatchWidthOrHeight
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 3807390444924058314, guid: abaff191da9d9e14ca57b116c96030e5,
+    - target: {fileID: 3807390444924058317, guid: abaff191da9d9e14ca57b116c96030e5,
         type: 3}
-      propertyPath: m_AnchoredPosition.y
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2921366464201495109, guid: abaff191da9d9e14ca57b116c96030e5,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1699,6 +1714,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1453528965, guid: 10cb0ec8ce75d494f89c71ad8a2a2cfe, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 11b8495321e551647a9f2e0eacf40f55, type: 3}
+    - target: {fileID: 1453528965, guid: 10cb0ec8ce75d494f89c71ad8a2a2cfe, type: 3}
+      propertyPath: MinDistance
+      value: 1.0130248
+      objectReference: {fileID: 0}
+    - target: {fileID: 1453528965, guid: 10cb0ec8ce75d494f89c71ad8a2a2cfe, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7374908870085310724, guid: 10cb0ec8ce75d494f89c71ad8a2a2cfe,
         type: 3}
       propertyPath: m_Offset.y
@@ -1713,14 +1740,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Offset.y
       value: -0.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 1453528965, guid: 10cb0ec8ce75d494f89c71ad8a2a2cfe, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 11b8495321e551647a9f2e0eacf40f55, type: 3}
-    - target: {fileID: 1453528965, guid: 10cb0ec8ce75d494f89c71ad8a2a2cfe, type: 3}
-      propertyPath: MinDistance
-      value: 1.0130248
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10cb0ec8ce75d494f89c71ad8a2a2cfe, type: 3}
@@ -2006,7 +2025,7 @@ PrefabInstance:
     - target: {fileID: 1067201560436973523, guid: eb0623a0013eba248b7ef60a9ed8570c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.963
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 1067201560436973523, guid: eb0623a0013eba248b7ef60a9ed8570c,
         type: 3}
