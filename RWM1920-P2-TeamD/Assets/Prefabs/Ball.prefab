@@ -16,9 +16,10 @@ GameObject:
   - component: {fileID: 5906044266498368040}
   - component: {fileID: 58683688939816644}
   - component: {fileID: 82087982377369472}
+  - component: {fileID: 114324871677063268}
   m_Layer: 0
   m_Name: Ball
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e56b0964f900dab478f0304179f8bf6b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 045debbb5f2d63646a4e1db597250e4d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -261,6 +262,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &114324871677063268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2778090198643897090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6b390d9c462ff44aa486a3133f34dac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballNum: 2
+  ballSprite: {fileID: 2778090198643897101}
+  sprite1: {fileID: 21300000, guid: e56b0964f900dab478f0304179f8bf6b, type: 3}
+  sprite2: {fileID: 21300000, guid: 045debbb5f2d63646a4e1db597250e4d, type: 3}
+  sprite3: {fileID: 21300000, guid: b0cbe9d641c088b44ba30817e683bbcd, type: 3}
+  sprite4: {fileID: 21300000, guid: 5da234876a941594db913ed5a8991ea9, type: 3}
+  sprite5: {fileID: 21300000, guid: 2622a4104c5e836489967ffabb6d8bae, type: 3}
 --- !u!1001 &4035038845099254014
 PrefabInstance:
   m_ObjectHideFlags: 0
