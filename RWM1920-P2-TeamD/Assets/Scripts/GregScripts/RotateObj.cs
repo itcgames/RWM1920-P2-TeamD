@@ -19,6 +19,7 @@ public class RotateObj : MonoBehaviour
 
     public void rotate()
     {
+        
         transform.Rotate(Vector3.forward * speed * Time.deltaTime);
     }
 
