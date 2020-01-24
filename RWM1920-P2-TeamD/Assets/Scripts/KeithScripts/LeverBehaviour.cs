@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LeverBehaviour : MonoBehaviour
 {
+   
     public MartinPipeScript pipeScript;
     public ConveyorBelt conveyorBelt;
     public Rotate cog1Rotate;
@@ -13,7 +14,7 @@ public class LeverBehaviour : MonoBehaviour
 	public AudioSource leverSource;
 	public AudioClip leverClip;
 
-    bool leverLeft = true;
+    public bool leverLeft = true;
 
     public Sprite Left;
     public Sprite Right;
@@ -34,8 +35,6 @@ public class LeverBehaviour : MonoBehaviour
         {
             this.GetComponent<SpriteRenderer>().sprite = Right;
         }
-
-        //print(leverLeft);
     }
 
     private void OnMouseOver()
@@ -75,6 +74,10 @@ public class LeverBehaviour : MonoBehaviour
         {
             leverLeft = true;
         }
+    }
 
+    public bool getLeverLeft()
+    {
+        return leverLeft;
     }
 }

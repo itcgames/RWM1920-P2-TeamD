@@ -9,7 +9,7 @@ public class LifeControllerScript : MonoBehaviour
     public GameObject heart1, heart2, heart3, heart4, heart5;
     public Text timeTxt;
     public Text Score;
-    public static int health = 5;
+    public int health = 5;
     public float timeLeft = 0;
 
     private static LifeControllerScript Instance;
@@ -33,6 +33,8 @@ public class LifeControllerScript : MonoBehaviour
         else
         {
             PlayerPrefs.SetInt("Health", PlayerPrefs.GetInt("Health"));
+            PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score"));
+            PlayerPrefs.Save();
         }
     }
 

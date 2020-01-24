@@ -22,6 +22,7 @@ public class Reset : MonoBehaviour
                 Debug.Log("Derp");
                 if (hit.transform.gameObject.tag == "ResetBT")
                 {
+                    PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score"));
                     Scene scene = SceneManager.GetActiveScene();
                     SceneManager.LoadScene(scene.name);
 
