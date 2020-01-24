@@ -16,15 +16,11 @@ public class Rotate : MonoBehaviour
     {
         if (Right == true)
         {
-            float rotAmount = -degreesPerSec * Time.deltaTime;
-            float currentRot = transform.localRotation.eulerAngles.z;
-            transform.localRotation = Quaternion.Euler(new Vector3(0, 0, (currentRot + rotAmount)));
+            transform.localRotation = NewRotation(-degreesPerSec, Time.deltaTime, transform.localRotation.eulerAngles.z);
         }
         else
         {
-            float rotAmount = degreesPerSec * Time.deltaTime;
-            float currentRot = transform.localRotation.eulerAngles.z;
-            transform.localRotation = Quaternion.Euler(new Vector3(0, 0, (currentRot + rotAmount)));
+            transform.localRotation = NewRotation(degreesPerSec, Time.deltaTime, transform.localRotation.eulerAngles.z);
         }
         
        
@@ -40,6 +36,12 @@ public class Rotate : MonoBehaviour
         {
             Right = true;
         }
+    }
+    public static Quaternion NewRotation(float t_dps, float t_time, float t_angle)
+    {
+        float rotAmount = t_dps * t_time;
+        float currentRot = t_angle;
+        return Quaternion.Euler(new Vector3(0, 0, (currentRot + rotAmount)));
     }
 
 }
