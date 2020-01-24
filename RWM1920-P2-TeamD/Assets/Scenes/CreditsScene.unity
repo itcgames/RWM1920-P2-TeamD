@@ -662,42 +662,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Programmers
-
-
-    Dylan Curran
-
-    Quintin Furlong
-
-    Keith Wilson
-
-    Martin Farrell
-
-    Greg Cahill
-
-
-    Designers
-
-
-    Kieran Kiernan
-
-    Hayley Byrne
-
-    Anetta Marchwinska
-
-
-    Audio Team
-
-
-    Dylan Curran
-
-    Quintin Furlong
-
-    Keith Wilson
-
-    Martin Farrell
-
-    Greg Cahill'
+  m_text: "Programmers\n\nDylan Curran\nQuintin Furlong\nKeith Wilson\nMartin Farrell\nGreg
+    Cahill\n\nDesigners\n\nKieran Kiernan\nHayley Byrne\nAnetta Marchwinska\n\nAudio
+    Team\n\nDylan Curran\nQuintin Furlong\nKeith Wilson\nMartin Farrell\nGreg Cahill\n\nMusic\n\nCiar\xE1n
+    Maye (ciaranmaye8@gmail.com)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -742,7 +710,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 223
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -766,12 +734,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -127.858154, w: -843.3776}
   m_textInfo:
     textComponent: {fileID: 2134468107}
-    characterCount: 222
+    characterCount: 266
     spriteCount: 0
-    spaceCount: 34
-    wordCount: 30
+    spaceCount: 40
+    wordCount: 36
     linkCount: 0
-    lineCount: 21
+    lineCount: 27
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
