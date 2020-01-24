@@ -1659,6 +1659,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PipePrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 7374908870085310744, guid: 10cb0ec8ce75d494f89c71ad8a2a2cfe,
+        type: 3}
+      propertyPath: m_TagString
+      value: Pipe
+      objectReference: {fileID: 0}
     - target: {fileID: 7374908870085310726, guid: 10cb0ec8ce75d494f89c71ad8a2a2cfe,
         type: 3}
       propertyPath: m_LocalPosition.x

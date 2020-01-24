@@ -6,6 +6,8 @@ public class BallBoundaryDetection : MonoBehaviour
 {
 	public AudioSource gameLossSource;
 	public AudioClip gameLossClip;
+    public static bool alive = true;
+    public static Vector2 startPos = new Vector2(0, 4.0f);
 
     // Start is called before the first frame update
     void Start()
@@ -53,5 +55,15 @@ public class BallBoundaryDetection : MonoBehaviour
 
 
 
+    }
+
+    public static Vector2 getStartPos()
+    {
+        return startPos;
+    }
+
+    public static bool getAlive()
+    {
+        return alive;
     }
 }

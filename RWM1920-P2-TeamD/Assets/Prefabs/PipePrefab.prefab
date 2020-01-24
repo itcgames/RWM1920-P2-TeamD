@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1453528965}
   m_Layer: 5
   m_Name: PipePrefab
-  m_TagString: Untagged
+  m_TagString: Pipe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

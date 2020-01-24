@@ -17,6 +17,7 @@ TagManager:
   - Gun
   - BackToMenu
   - LevelSelect
+  - Pipe
   layers:
   - Default
   - TransparentFX

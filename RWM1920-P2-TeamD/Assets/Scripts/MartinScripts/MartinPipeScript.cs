@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class MartinPipeScript : MonoBehaviour
 {
-    bool active = false;
+    public static bool activePipe = false;
 	public AudioSource pipeSource;
 	public AudioClip pipeClip;
+    public static float pipeHeight = 0.9f;
+    public static float rotation = 0.0f;
 	private void Start()
 	{
 		pipeSource.clip = pipeClip;
@@ -18,7 +20,7 @@ public class MartinPipeScript : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (active)
+        if (activePipe)
         {
 			pipeSource.Play();
             if (collision.gameObject.GetComponent<Rigidbody2D>().transform.position.y > this.GetComponent<Transform>().position.y)
@@ -36,15 +38,30 @@ public class MartinPipeScript : MonoBehaviour
         }
     }
 
+    public static bool getAlive()
+    {
+        return activePipe;
+    }
+
+    public static float getPipeHeight()
+    {
+        return pipeHeight;
+    }
+
+    public static float getRotation()
+    {
+        return rotation;
+    }
+
     public void toggleActive()
     {
-        if(active)
+        if(activePipe)
         {
-            active = false;
+            activePipe = false;
         }
         else
         {
-            active = true;
+            activePipe = true;
         } 
     }
 }
