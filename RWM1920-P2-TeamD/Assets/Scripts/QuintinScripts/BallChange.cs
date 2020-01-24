@@ -45,7 +45,6 @@ public class BallChange : MonoBehaviour
                 ballSprite.sprite = sprite5;
                 break;
         };
-        Debug.Log(ballNum);
     }
     public void right()
     {

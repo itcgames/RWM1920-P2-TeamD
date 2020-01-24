@@ -55,8 +55,6 @@ public class LifeControllerScript : MonoBehaviour
         timeTxt.text = "Time: " + (int)timeLeft;
         Score.text = "Score: " + PlayerPrefs.GetInt("Score");
 
-        print(timeLeft);
-
         switch (PlayerPrefs.GetInt("Health"))
         {
             case 5:
