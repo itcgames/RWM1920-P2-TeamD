@@ -13,7 +13,7 @@ public class ReturnToMenu : MonoBehaviour
             
             if (hit.transform != null)
             {
-                Debug.Log("derp");
+                
                 if (hit.transform.gameObject.tag == "MainMenu")
                 {
                     SceneManager.LoadScene(3);
@@ -26,5 +26,9 @@ public class ReturnToMenu : MonoBehaviour
                 }
             }
         }
+    }
+    public static Scene getScene()
+    {
+        return SceneManager.GetSceneAt(0);
     }
 }

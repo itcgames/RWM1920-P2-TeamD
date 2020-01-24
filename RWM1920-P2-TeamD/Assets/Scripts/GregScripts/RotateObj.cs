@@ -28,4 +28,9 @@ public class RotateObj : MonoBehaviour
     {
         transform.Rotate(0, 0, 180);
     }
+    public static Vector3 Rotate(Vector3 t_vec)
+    { 
+
+        return Vector3.Scale(t_vec, (Vector3.forward * Time.deltaTime));
+    }
 }

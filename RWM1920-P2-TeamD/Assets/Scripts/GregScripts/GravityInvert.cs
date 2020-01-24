@@ -16,6 +16,11 @@ public class GravityInvert : MonoBehaviour {
         Rb.AddForce(vec);
     }
 
+    public static Vector3 getVec(Vector3 t_vec)
+    {
+        Vector3 vector = new Vector3(Mathf.Cos(((t_vec.z + 90) * Mathf.PI) / 180), Mathf.Sin(((t_vec.z + 90) * Mathf.PI) / 180));
+        return vector;
+    }
     public GameObject spawnSelf()
     {
         Instantiate(gameObject, new Vector3(0, 0, 0), Quaternion.identity);
