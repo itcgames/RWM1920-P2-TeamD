@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class MartinPipeScript : MonoBehaviour
 {
-    bool active = false;
+    public bool active = false;
+    public static bool alive = false;
+    public static float height = 0.9f;
+    public static float rotation = 0;
 	public AudioSource pipeSource;
 	public AudioClip pipeClip;
     public Sprite pipeOpen;
@@ -40,6 +43,21 @@ public class MartinPipeScript : MonoBehaviour
             }
         }
     }
+    public static bool getAlive()
+    {
+        return alive;
+    }
+
+    public static float getRotation()
+    {
+        return rotation;
+    }
+
+    public static float getHeight()
+    {
+        return height;
+    }
+
 
     public void toggleActive()
     {
