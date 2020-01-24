@@ -6,7 +6,7 @@ public class Key : MonoBehaviour
 {
     public bool Collected = false;
     private bool switchDir = false;
-    int speed = 5;
+    public int speed = 5;
     void Update()
     {
         if(gameObject.transform.rotation.eulerAngles.z>5)

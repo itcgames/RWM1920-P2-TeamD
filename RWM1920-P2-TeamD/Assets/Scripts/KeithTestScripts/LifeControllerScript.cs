@@ -10,7 +10,7 @@ public class LifeControllerScript : MonoBehaviour
     public Text timeTxt;
     public Text Score;
     public static int health = 5;
-    public float timeLeft = 0;
+    public static float timeLeft = 20;
 
     private static LifeControllerScript Instance;
     // Start is called before the first frame update
@@ -33,6 +33,7 @@ public class LifeControllerScript : MonoBehaviour
         else
         {
             PlayerPrefs.SetInt("Health", PlayerPrefs.GetInt("Health"));
+            timeLeft = 20;
         }
     }
 

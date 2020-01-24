@@ -10,7 +10,7 @@ public class LeverBehaviour : MonoBehaviour
     public Rotate cog2Rotate;
 
     public RotateObj gravBox;
-	public AudioSource leverSource;
+    public AudioSource leverSource;
 	public AudioClip leverClip;
 
     bool leverLeft = true;
