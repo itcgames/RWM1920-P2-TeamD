@@ -43,7 +43,6 @@ public class LeverBehaviour : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && this.tag == "PipeLever")
         {
             leverSource.Play();
-            Debug.Log("pipe lever works");
             pipeScript.toggleActive();
             toggleLeverLeft();
         }

@@ -31,7 +31,6 @@ public class MartinPipeScript : MonoBehaviour
 			pipeSource.Play();
             if (collision.gameObject.GetComponent<Rigidbody2D>().transform.position.y > this.GetComponent<Transform>().position.y)
             {
-				Debug.Log("Downcollision");
 				Transform otherObj = collision.gameObject.GetComponent<Rigidbody2D>().transform;
                 otherObj.SetPositionAndRotation(new Vector3(otherObj.position.x, otherObj.position.y - this.GetComponent<Renderer>().bounds.size.y - otherObj.GetComponent<Renderer>().bounds.size.y - 0.05f, otherObj.position.z), new Quaternion());
             }

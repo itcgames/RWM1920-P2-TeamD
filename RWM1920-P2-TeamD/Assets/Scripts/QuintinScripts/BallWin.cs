@@ -18,7 +18,6 @@ public class BallWin : MonoBehaviour
 	}
 	void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("collision");
         if (other.name == "Ball")
         {
             Scene scene = SceneManager.GetActiveScene();
@@ -37,25 +36,26 @@ public class BallWin : MonoBehaviour
             else if (scene.name == "Level3")
             {
                 gameWinSource.Play();
+                PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + (200 * PlayerPrefs.GetInt("Health")));
                 SceneManager.LoadScene(8);//level4
             }
             else if (scene.name == "Level4")
             {
                 gameWinSource.Play();
                 PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + (200 * PlayerPrefs.GetInt("Health")));
-                PlayerPrefs.SetInt("Health", 5);
-                PlayerPrefs.SetInt("Score", 0);
                 SceneManager.LoadScene(11);//level5
             }
             else if (scene.name == "Level5")
             {
                 gameWinSource.Play();
+                PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + (200 * PlayerPrefs.GetInt("Health")));
                 SceneManager.LoadScene(12);//level6
             }
 			else if(scene.name == "Level6")
 			{
 				gameWinSource.Play();
-				SceneManager.LoadScene(5);//credits
+                PlayerPrefs.SetInt("Score", PlayerPrefs.GetInt("Score") + (200 * PlayerPrefs.GetInt("Health")));
+                SceneManager.LoadScene(5);//credits
 			}
         }
     }
