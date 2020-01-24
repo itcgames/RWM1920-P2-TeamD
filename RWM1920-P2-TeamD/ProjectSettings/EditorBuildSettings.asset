@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level6.unity
     guid: 478d33c4c8c5e8c4c8bf53334cafc880
+  - enabled: 1
+    path: Assets/Prefabs/GregTestScene.unity
+    guid: ff8a748ea6067754fb34fea5c660b1fa
   m_configObjects: {}

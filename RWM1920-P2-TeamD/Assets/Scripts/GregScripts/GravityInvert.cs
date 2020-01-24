@@ -15,4 +15,10 @@ public class GravityInvert : MonoBehaviour {
         vec = (temp * Rb.mass)*50;
         Rb.AddForce(vec);
     }
+
+    public GameObject spawnSelf()
+    {
+        Instantiate(gameObject, new Vector3(0, 0, 0), Quaternion.identity);
+        return gameObject;
+    }
 }

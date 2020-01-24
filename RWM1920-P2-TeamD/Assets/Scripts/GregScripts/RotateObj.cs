@@ -22,6 +22,7 @@ public class RotateObj : MonoBehaviour
         
         transform.Rotate(Vector3.forward * speed * Time.deltaTime);
     }
+    
 
     public void rotate90()
     {
